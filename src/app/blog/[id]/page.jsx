@@ -3,16 +3,18 @@ import { articles } from '@/data/articles';
 import { notFound } from 'next/navigation';
 
 export async function generateStaticParams() {
-  return articles.map((article) => ({
-    id: article.id,
-  }));
+  return articles
+    .filter((article) => new Date(article.date) <= new Date())
+    .map((article) => ({
+      id: article.id,
+    }));
 }
 
 export async function generateMetadata({ params }) {
   const { id } = await params;
   const article = articles.find((a) => a.id === id);
 
-  if (!article) {
+  if (!article || new Date(article.date) > new Date()) {
     return {
       title: 'Article Not Found | Curioso',
       description: 'The requested article could not be found.',
@@ -58,7 +60,7 @@ export default async function ArticleView({ params }) {
   const { id } = await params;
   const article = articles.find((a) => a.id === id);
 
-  if (!article) {
+  if (!article || new Date(article.date) > new Date()) {
     notFound();
   }
 

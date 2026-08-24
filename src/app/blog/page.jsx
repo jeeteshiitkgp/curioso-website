@@ -49,7 +49,9 @@ export default function Blog() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* 2-Column Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
-          {localArticles.map((article) => {
+          {localArticles
+            .filter((article) => new Date(article.date) <= new Date())
+            .map((article) => {
             return (
               <Link 
                 key={article.id} 

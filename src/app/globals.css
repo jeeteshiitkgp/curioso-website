@@ -1,0 +1,20 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+@theme inline {
+  --color-space: #0B1120;
+  --color-ivory: #F8FAFC;
+  --color-electric: #F97316;
+  --color-cyan: #06B6D4;
+  --font-sans: Inter, system-ui, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-space);
+  color: var(--color-ivory);
+  font-family: var(--font-sans);
+}

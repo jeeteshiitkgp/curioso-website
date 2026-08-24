@@ -1,0 +1,7 @@
+# Allow all crawlers
+User-agent: *
+Allow: /
+
+# Host & Sitemap
+Host: https://www.curioso.school
+Sitemap: https://www.curioso.school/sitemap.xml

@@ -23,9 +23,12 @@ export async function POST(req: Request) {
     const resendApiKey = process.env.RESEND_API_KEY;
     if (resendApiKey) {
       const resend = new Resend(resendApiKey);
-      await resend.emails.send({
-        from: 'Curioso Inquiries <notifications@curioso.school>',
-        to: ['jeetesh@curioso.school'],
+      const fromEmail = process.env.RESEND_FROM_EMAIL || 'Curioso Inquiries <onboarding@resend.dev>';
+      const toEmail = process.env.NOTIFICATION_EMAIL || 'jeetesh@curioso.school';
+
+      const emailResponse = await resend.emails.send({
+        from: fromEmail,
+        to: [toEmail],
         replyTo: email,
         subject: `🚨 New School Partnership Inquiry: ${fullName}`,
         html: `

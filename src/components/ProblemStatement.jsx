@@ -24,14 +24,14 @@ export default function ProblemStatement() {
               Why does milk boil over, but water does not?
             </h3>
             <p className="text-lg md:text-xl text-slate-600 mb-8 leading-relaxed font-medium">
-              Every child starts out as a natural-born scientist, relentlessly asking "Why?" 
+              Every child starts out as a natural-born scientist, constantly asking "Why?" 
               Yet traditional systems force them into rigid molds, prioritizing rote memorization over intrinsic discovery.
             </p>
             <div className="mb-10 leading-relaxed font-medium italic border-l-4 border-cyan pl-6 bg-slate-50 py-6 pr-6 rounded-r-2xl shadow-sm">
               <p className="text-lg md:text-xl text-slate-700 mb-3">
                 "Every kid starts out as a natural-born scientist, and then we beat it out of them. A few trickle through the system with their wonder and enthusiasm for science intact."
               </p>
-              <span className="not-italic font-bold text-sm tracking-widest uppercase text-space block">— Carl Sagan</span>
+              <span className="not-italic font-bold text-sm tracking-widest uppercase text-space block">- Carl Sagan</span>
             </div>
             
             <div className="pl-8 border-l-4 border-electric py-2">

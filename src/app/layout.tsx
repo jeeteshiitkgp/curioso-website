@@ -10,17 +10,18 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.curioso.school"),
   title: {
-    default: "Curioso | Clinical-Grade Experiential Science & Math Curriculum for Schools",
+    default: "Curioso | Curiosity-Driven School Program, STEM Curriculum & Makerspace Consultants",
     template: "%s | Curioso"
   },
-  description: "Proprietary physical curriculum architecture for CBSE and ICSE schools in India. Replaces sterile robotics kits with clinical-grade hands-on mechanics and raw-material problem solving aligned with NEP 2020.",
+  description: "Proprietary physical curriculum architecture for CBSE, ICSE, IB, and IGCSE schools in India. Replaces sterile robotics kits with curiosity-driven hands-on mechanics and open-market makerspace consulting aligned with NEP 2020.",
   keywords: [
+    "curiosity driven school program",
+    "STEM school program India",
+    "makerspace school consultants",
     "NEP 2020 experiential learning curriculum",
     "competency based learning CBSE ICSE",
     "hands on science curriculum for schools India",
-    "physical STEM lab alternative Bangalore Delhi Mumbai",
-    "K-12 science curriculum architecture",
-    "Curioso school curriculum",
+    "no-kit STEM lab alternative",
     "Jeetesh Gulani"
   ],
   authors: [{ name: "Jeetesh Gulani", url: "https://www.curioso.school/about" }],
@@ -30,9 +31,6 @@ export const metadata: Metadata = {
     email: false,
     address: false,
     telephone: false,
-  },
-  alternates: {
-    canonical: "https://www.curioso.school",
   },
   openGraph: {
     type: "website",
@@ -80,9 +78,14 @@ export default function RootLayout({
     "@context": "https://schema.org",
     "@type": "EducationalOrganization",
     "name": "Curioso School Foundation",
+    "alternateName": ["Curioso", "Curioso School"],
     "url": "https://www.curioso.school",
     "logo": "https://www.curioso.school/curioso_hero_robot.png",
-    "description": "Proprietary physical curriculum architecture and clinical-grade experiential science and math programs for premium K-12 schools in India.",
+    "description": "Proprietary physical curriculum architecture, curiosity-driven school programs, STEM school programs, and vendor-neutral makerspace school consulting for progressive K-12 schools in India.",
+    "sameAs": [
+      "https://www.linkedin.com/in/jeeteshgulani/",
+      "https://jeeteshgulani.substack.com"
+    ],
     "founder": {
       "@type": "Person",
       "name": "Jeetesh Gulani",
@@ -98,11 +101,13 @@ export default function RootLayout({
       "name": "India"
     },
     "knowsAbout": [
+      "Curiosity-Driven School Program",
+      "STEM School Program",
+      "Makerspace School Consulting",
       "NEP 2020 Experiential Learning",
+      "No-Kit Physical Science Curriculum",
       "CBSE Science Curriculum",
-      "ICSE Science Curriculum",
-      "Physical Mechanics",
-      "K-12 STEM Education"
+      "ICSE Science Curriculum"
     ]
   };
 

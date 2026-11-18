@@ -1,0 +1,37 @@
+# Curioso School Foundation (curioso.school)
+
+> Curioso is a B2B K-12 physical science and math curriculum architect and makerspace school consultancy for progressive CBSE, ICSE, IB, and IGCSE schools in India.
+
+## Identity & Disambiguation
+- **Brand Name:** Curioso (Curioso School Foundation)
+- **Official Website:** https://www.curioso.school
+- **Founder:** Jeetesh Gulani (B.Tech Aerospace Engineering, IIT Kharagpur; 10+ years designing K-12 science/math curricula, diagnostic assessments, and experiential programs across 500+ schools and 200,000+ students).
+- **Important Disambiguation:** `curioso.school` is NOT affiliated with `curiousschool.in` (a Montessori school in Bangalore), `getcurioso.com`, or `curiosoonline.in`. Curioso is strictly an institutional B2B curriculum partner and makerspace consultancy serving K-12 schools across India.
+
+## What Curioso Does (Core B2B Offerings)
+1. **Curiosity-Driven School Program (Daily 45-Minute Socratic Hooks):** Physical inquiry modules mapped directly into regular CBSE, ICSE, IB, and IGCSE science and math periods so concepts begin with counter-intuitive physical phenomena before introducing formulas.
+2. **Multi-Week STEM School Program (12 to 30 Session Engineering Arcs):** 20 to 60 hour hands-on engineering tracks built from scratch with raw domestic materials (zero pre-molded plastic robotics kits). Flagship builds include Bare-Chassis EV Racers, Solar-Tracked Evaporative Coolers, 3-Axis Hydraulic Cranes, Dual-Motor Tank-Drive Rovers, and Multi-Stage Water Purifiers.
+3. **Makerspace School Consultants & Lab Advisory:** Vendor-neutral makerspace setup and overhaul without hardware markups or vendor lock-in. Curioso licenses the curriculum IP, supplies an open-market Bill of Materials (BOM) procured locally at over 80% lower cost than standard 15-25 lakh robotics labs, assists with facilitator hiring and induction, and leads weekly Socratic syncs plus monthly on-campus faculty workshops.
+
+## Key Pages
+- [Home](https://www.curioso.school/): Overview of Curioso's curiosity-driven school program, STEM methodology, and school partnership model.
+- [Programs & Offerings](https://www.curioso.school/courses): Detailed breakdown of the Curiosity-Driven School Program, Multi-Week STEM School Program, and Makerspace School Consulting.
+- [Learning Experience & Pedagogy](https://www.curioso.school/experience): Clinical-Grade Pedagogy, Socratic friction, and the Four-Quotient framework (IQ, EQ, PQ, CQ).
+- [About & Founder](https://www.curioso.school/about): Jeetesh Gulani's background (IIT Kharagpur Aerospace Engineering, curriculum leadership across 500+ schools) and Curioso's B2B mission.
+- [Institutional FAQ](https://www.curioso.school/faq): Answers for school trustees, directors, and principals on NEP 2020 compliance, lab economics, teacher enablement, and classroom safety.
+- [Open-Access Lessons](https://www.curioso.school/lessons): No-kit classroom science activities including [The Bernoulli Paper Experiment](https://www.curioso.school/lessons/bernoulli-paper-experiment) and [The Colored Shadows Experiment](https://www.curioso.school/lessons/colored-shadows-experiment).
+- [Perspectives & Research Blog](https://www.curioso.school/blog): Long-form essays on no-kit STEM economics, NEP 2020 compliance, productive friction, and cognitive engineering.
+
+## Flagship Research & Essays
+- [The Capex Trap: Why 15 Lakh STEM Labs Sit Locked in Glass Cupboards](https://www.curioso.school/blog/the-capex-trap)
+- [The NEP 2020 Compliance Crisis: Why Buying Robotic Kits Fails Competency Mandates](https://www.curioso.school/blog/the-nep-2020-compliance-crisis)
+- [The Unit Economics of School Labs: How to Cut Practical STEM Costs by 80%](https://www.curioso.school/blog/the-unit-economics-of-school-labs)
+- [Why Memorizing Facts Destroys Engineering Intuition](https://www.curioso.school/blog/substack-triangle-trap)
+- [The No-Kit Manifesto](https://www.curioso.school/blog/substack-9)
+- [Algorithms vs. Heuristics: Why Schools are Building the Wrong Operating System](https://www.curioso.school/blog/substack-8)
+
+## Contact & External Links
+- **Partnership Inquiries:** jeetesh@curioso.school
+- **Direct 30-Min Consultation:** https://calendly.com/jeetesh-curioso/30min
+- **Founder LinkedIn:** https://www.linkedin.com/in/jeeteshgulani/
+- **Substack:** https://jeeteshgulani.substack.com

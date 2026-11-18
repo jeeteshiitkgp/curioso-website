@@ -2,9 +2,9 @@ import Link from 'next/link';
 
 export default function Courses() {
   const shortCourses = [
-    { name: "Interdisciplinary", desc: "Weaving science, math, and social studies into unified blocks." },
-    { name: "Robotics & Eng.", desc: "60-hour project continuum building mechanical systems." },
-    { name: "Premium Exam Prep", desc: "JEE & CET tier pedagogy directly inside your school." }
+    { name: "Curiosity-Driven School Program", desc: "Daily 45-minute physical Socratic hooks mapped directly into regular science and math periods." },
+    { name: "STEM School Program", desc: "12 to 30 session bare-chassis engineering tracks built from raw domestic materials, zero kits." },
+    { name: "Makerspace School Consultants", desc: "Vendor-neutral open-market BOM, facilitator hiring and induction, and monthly campus workshops." }
   ];
 
   return (

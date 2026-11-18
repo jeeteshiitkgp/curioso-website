@@ -1,15 +1,16 @@
-"use client";
-
 import Link from 'next/link';
-import useSEO from '@/hooks/useSEO';
 import { lessons } from '@/data/lessons';
-import { ArrowRight, Clock, Wrench } from 'lucide-react';
+import { ArrowRight, Clock } from 'lucide-react';
+
+export const metadata = {
+  title: "Clinical-Grade Physics & STEM Lessons",
+  description: "Explore our database of open-source experiential science lessons. We provide NCERT CBSE, ICSE, IB, and IGCSE aligned physics activities with zero expensive lab hardware required.",
+  alternates: {
+    canonical: "https://www.curioso.school/lessons",
+  },
+};
 
 export default function Lessons() {
-  useSEO({
-    title: "Clinical-Grade Physics & STEM Lessons | Curioso",
-    description: "Explore our database of open-source experiential science lessons. We provide NCERT CBSE/ICSE aligned physics activities with zero expensive lab hardware required."
-  });
 
   return (
     <div className="bg-ivory min-h-screen">

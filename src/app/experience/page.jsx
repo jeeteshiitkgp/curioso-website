@@ -1,16 +1,14 @@
-"use client";
-
-import { useState } from 'react';
 import Link from 'next/link';
-import useSEO from '@/hooks/useSEO';
+
+export const metadata = {
+  title: "Curiosity-Driven School Program & Clinical-Grade Pedagogy",
+  description: "How our curiosity-driven school program replaces rote memorization and sterile plastic robotics kits with physical mechanics, Socratic inquiry, and the Four-Quotient framework (IQ, EQ, PQ, CQ).",
+  alternates: {
+    canonical: "https://www.curioso.school/experience",
+  },
+};
 
 export default function Experience() {
-  useSEO({
-    title: "Experiential Science & Math Labs | Competency Based Learning | Curioso",
-    description: "Discover our physical-to-digital learning ecosystem. We replace rote memorization with hands-on science activities and active diagnostic modeling to build fluid reasoning."
-  });
-
-  const [activeNode, setActiveNode] = useState(null);
 
   const nodes = [
     { id: 'ilb', name: 'Individual Learning Bands', position: 'top-[35%] left-[5%] md:left-[12%]', link: '/blog/individualized-learning-pathway', image: '/images/nodes/individual_learning.png' },
@@ -124,7 +122,7 @@ export default function Experience() {
         <div className="text-center mb-24 max-w-4xl mx-auto">
           <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold text-space mb-6">What We Intend To Achieve</h2>
           <p className="text-[10px] sm:text-xs md:text-sm lg:text-base text-slate-600 leading-relaxed font-medium">
-            We believe that education must transcend rote memorization. Our mission is to measure and maximize student growth across four critical axes: <strong className="text-space">Intelligence, Emotion, Physicality, and Creativity</strong>. By integrating dynamic methodologies like the Buddy Chain and Fluid Curricula, we don't just teach—we reform the entire learning ecosystem.
+            We believe that education must transcend rote memorization. Our mission is to measure and maximize student growth across four critical axes: <strong className="text-space">Intelligence, Emotion, Physicality, and Creativity</strong>. By integrating dynamic methodologies like the Buddy Chain and Fluid Curricula, we do not just teach, we reform the entire learning ecosystem.
           </p>
         </div>
 

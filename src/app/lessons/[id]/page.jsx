@@ -1,22 +1,55 @@
-"use client";
-
 import Link from 'next/link';
+import { notFound } from 'next/navigation';
 import ReactMarkdown from 'react-markdown';
-import useSEO from '@/hooks/useSEO';
 import { lessons } from '@/data/lessons';
 import { ArrowLeft, Clock, Wrench } from 'lucide-react';
 
-export default function LessonView({ params }) {
-  const { id } = use(params);
-  const lesson = lessons.find(l => l.id === id);
+export async function generateStaticParams() {
+  return lessons.map((lesson) => ({
+    id: lesson.id,
+  }));
+}
 
-  useSEO({
-    title: lesson ? `${lesson.title} | Curioso Lessons` : "Lesson Not Found",
-    description: lesson ? lesson.hook : "Lesson not found."
-  });
+export async function generateMetadata({ params }) {
+  const { id } = await params;
+  const lesson = lessons.find((l) => l.id === id);
 
   if (!lesson) {
-    return <Navigate to="/lessons" replace />;
+    return {
+      title: 'Lesson Not Found | Curioso',
+      description: 'The requested lesson could not be found.',
+    };
+  }
+
+  const lessonUrl = `https://www.curioso.school/lessons/${lesson.id}`;
+
+  return {
+    title: `${lesson.title} | Open-Access Lessons`,
+    description: lesson.hook,
+    alternates: {
+      canonical: lessonUrl,
+    },
+    openGraph: {
+      title: `${lesson.title} | Curioso`,
+      description: lesson.hook,
+      url: lessonUrl,
+      type: 'article',
+      images: [
+        {
+          url: lesson.image || '/curioso_hero_robot.png',
+          alt: lesson.title,
+        },
+      ],
+    },
+  };
+}
+
+export default async function LessonView({ params }) {
+  const { id } = await params;
+  const lesson = lessons.find((l) => l.id === id);
+
+  if (!lesson) {
+    notFound();
   }
 
   return (
@@ -83,7 +116,7 @@ export default function LessonView({ params }) {
                   Ready to implement this at your school?
                 </p>
                 <Link 
-                  href="/clinical-grade-pedagogy" 
+                  href="/experience" 
                   className="block w-full text-center bg-space hover:bg-indigo-900 text-white font-bold py-3 px-6 rounded-xl transition-all duration-300 shadow-md hover:shadow-xl text-[10px] sm:text-xs md:text-sm lg:text-base"
                 >
                   View Full Pedagogy

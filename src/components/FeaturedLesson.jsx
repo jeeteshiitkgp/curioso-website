@@ -13,7 +13,7 @@ export default function FeaturedLesson() {
             </h2>
           </div>
           <Link 
-            href="/clinical-grade-pedagogy/lessons" 
+            href="/lessons" 
             className="hidden md:flex items-center text-electric font-semibold hover:text-space transition-colors"
           >
             View Lesson Repository <ArrowRight className="w-4 h-4 ml-2" />
@@ -33,7 +33,7 @@ export default function FeaturedLesson() {
               </div>
 
               <Link 
-                href="/clinical-grade-pedagogy/lessons/bernoulli-paper-experiment" 
+                href="/lessons/bernoulli-paper-experiment" 
                 className="inline-flex items-center justify-center bg-electric text-space font-bold py-3 px-6 rounded-xl hover:bg-orange-500 hover:text-white transition-colors w-max"
               >
                 Access Lesson
@@ -63,7 +63,7 @@ export default function FeaturedLesson() {
         
         <div className="mt-8 text-center md:hidden">
           <Link 
-            href="/clinical-grade-pedagogy/lessons" 
+            href="/lessons" 
             className="inline-flex items-center text-electric font-semibold hover:text-space transition-colors"
           >
             View Lesson Repository <ArrowRight className="w-4 h-4 ml-2" />

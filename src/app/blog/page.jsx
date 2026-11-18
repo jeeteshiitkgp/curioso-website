@@ -50,7 +50,7 @@ export default function Blog() {
         {/* 2-Column Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
           {localArticles
-            .filter((article) => new Date(article.date) <= new Date())
+            .filter((article) => !article.date || new Date(article.date) <= new Date())
             .map((article) => {
             return (
               <Link 

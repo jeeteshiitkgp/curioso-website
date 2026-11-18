@@ -1,19 +1,19 @@
-"use client";
-
 import Hero from '@/components/Hero'
 import ProblemStatement from '@/components/ProblemStatement'
 import FounderStory from '@/components/FounderStory'
 import ExperienceTeaser from '@/components/ExperienceTeaser'
 import Courses from '@/components/Courses'
 import FeaturedLesson from '@/components/FeaturedLesson'
-import useSEO from '@/hooks/useSEO'
+
+export const metadata = {
+  title: "Curiosity-Driven School Program, STEM Curriculum & Makerspace Consultants | Curioso",
+  description: "We partner with progressive CBSE, ICSE, IB, and IGCSE schools in India as makerspace school consultants and STEM school program architects. Zero hardware lock-in, raw-material mechanics, and teacher enablement.",
+  alternates: {
+    canonical: "https://www.curioso.school",
+  },
+};
 
 export default function Home() {
-  useSEO({
-    title: "Experiential Learning in Schools | NEP 2020 Curriculum Guidelines | Curioso",
-    description: "Implement competency based learning CBSE and ICSE pathways without expensive robotics kits. Curioso provides clinical grade science and math curriculum architecture for premium private schools in India."
-  });
-
   return (
     <div className="flex flex-col">
       <Hero />

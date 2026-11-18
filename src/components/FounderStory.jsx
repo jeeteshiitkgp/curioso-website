@@ -14,10 +14,10 @@ export default function FounderStory() {
               Education shouldn't be about ticking boxes.
             </h3>
             <p className="text-lg text-slate-300 mb-6 leading-relaxed font-medium">
-              I've always believed learning should inspire curiosity—not just memorization. My journey started as a student fueled by questions, driven by late-night discoveries, and guided by mentors who showed me that real growth happens when we see connections beyond the textbook.
+              I've always believed learning should inspire curiosity, not just memorization. My journey started as a student fueled by questions, driven by late-night discoveries, and guided by mentors who showed me that real growth happens when we see connections beyond the textbook.
             </p>
             <p className="text-lg text-slate-300 mb-10 leading-relaxed font-medium">
-              After seeing firsthand how traditional classrooms can selectively dim that distinct spark, I set out to create something entirely different: a place where students are powerfully encouraged to wonder, explore, and relentlessly find their own "why."
+              After seeing firsthand how traditional classrooms can selectively dim that distinct spark, I set out to create something entirely different: a place where students are encouraged to wonder, explore, and freely find their own "why."
             </p>
             <div className="flex items-center gap-5 bg-indigo-950/40 p-5 rounded-2xl border border-indigo-500/20 backdrop-blur-sm max-w-sm">
               <div className="w-16 h-16 rounded-full bg-indigo-900 border-2 border-indigo-400/50 overflow-hidden shadow-[0_0_15px_rgba(6,182,212,0.3)] shrink-0">

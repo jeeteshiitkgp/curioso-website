@@ -1,12 +1,12 @@
-"use client";
-
-import useSEO from '@/hooks/useSEO';
+export const metadata = {
+  title: "About Jeetesh Gulani | Makerspace & STEM School Program Architects",
+  description: "Founded by IIT Kharagpur Aerospace Engineer Jeetesh Gulani. Over a decade building curiosity-driven school programs, STEM assessments, and no-kit physical curricula for 500+ schools and 200,000+ students.",
+  alternates: {
+    canonical: "https://www.curioso.school/about",
+  },
+};
 
 export default function About() {
-  useSEO({
-    title: "About Our Curriculum Design | Jeetesh Gulani | Curioso",
-    description: "Curioso was founded by Jeetesh Gulani, an Aerospace Engineer from IIT Kharagpur, with over a decade of experience designing science and math curricula for leading Indian private schools."
-  });
 
   return (
     <div className="bg-ivory min-h-screen">
@@ -32,7 +32,6 @@ export default function About() {
                   src="/founder.jpg" 
                   alt="Jeetesh Gulani" 
                   className="w-full h-full object-cover rounded-lg sm:rounded-2xl filter drop-shadow-2xl"
-                  onError={(e) => { e.target.onerror = null; e.target.src = "https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80&w=800&h=800"; }}
                 />
               </div>
             </div>
@@ -105,13 +104,13 @@ export default function About() {
            <div className="relative z-10">
             <h2 className="text-[8px] sm:text-xs font-bold tracking-[0.2em] text-electric uppercase mb-2 sm:mb-4">The Mission</h2>
             <h3 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold mb-6 sm:mb-8 tracking-tight text-white leading-tight">
-              Building the school where the flame of curiosity receives the nourishment it deserves.
+              Partnering with progressive schools to build real engineering intuition, not glass-cupboard showrooms.
             </h3>
             <p className="text-[10px] sm:text-xs md:text-sm lg:text-base text-slate-300 font-medium leading-relaxed mb-6">
-              Curioso is being envisioned as a K-12 experimental school in Bangalore, the hub of innovation. We exist to provide an ecosystem for the full expression of learning, imparting not just technical upskilling, but ensuring that 21st-century skills are pushed to their absolute fullest potential.
+              Curioso partners directly with forward-thinking CBSE, ICSE, IB, and IGCSE schools across India as their curriculum architect and makerspace consultant. We do not sell proprietary plastic kits or lock schools into expensive hardware vendor contracts.
             </p>
             <p className="text-[10px] sm:text-xs md:text-sm lg:text-base text-slate-300 font-medium leading-relaxed">
-              We are deliberately structuring our admissions to target a significant majority of students from underprivileged backgrounds. Our core mission is upward economic mobility—giving students who lack access to top-tier technical and problem-solving paradigms a long-lasting, deep impact model that changes the trajectory of their future.
+              Instead, we license a structured physical curriculum built on an open-market Bill of Materials, train and induct your science and math faculty through weekly Socratic syncs and monthly campus workshops, and turn regular classrooms into active engineering labs.
             </p>
            </div>
         </section>

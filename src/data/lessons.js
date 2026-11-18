@@ -21,7 +21,7 @@ It seems completely backwards, but there is a hidden force of physics at play he
 
 When you blow air between the papers, you make that air move much faster. In physics, there is a rule called **Bernoulli's Principle**, which states that fast-moving air (or any fluid) actually drops in pressure. 
 
-Because the air between the sheets is moving fast, the air pressure there becomes very low. Meanwhile, the air on the *outside* of the papers is still sitting still, meaning its pressure is normal—which is now much higher than the pressure in the middle. This higher air pressure on the outside pushes the papers inward into the low-pressure gap, snapping them together.
+Because the air between the sheets is moving fast, the air pressure there becomes very low. Meanwhile, the air on the *outside* of the papers is still sitting still, meaning its pressure is normal, which is now much higher than the pressure in the middle. This higher air pressure on the outside pushes the papers inward into the low-pressure gap, snapping them together.
 
 ## From Paper to Giant Airplanes
 
@@ -57,7 +57,7 @@ Instead of a dark, colorless shadow, you will see three vibrant silhouettes: cya
 
 To understand why this happens, we have to look at how our eyes see color. 
 
-We are used to mixing paint, where combining red, yellow, and blue paint makes a messy brown or black. Paint is **subtractive**—pigments absorb light and reflect only the remaining colors. 
+We are used to mixing paint, where combining red, yellow, and blue paint makes a messy brown or black. Paint is **subtractive**, because pigments absorb light and reflect only the remaining colors. 
 
 But light is **additive**. When you mix different light waves together, they add up. Red, green, and blue are the primary colors of light. When combined, they make white.
 
@@ -69,7 +69,7 @@ When you place a pencil in front of the white beam, you are blocking individual 
 
 ## The screen in your pocket
 
-This is not just a neat trick—it is the exact science behind how your phone, tablet, or TV screen displays pictures. 
+This is not just a neat trick, it is the exact science behind how your phone, tablet, or TV screen displays pictures. 
 
 If you looked at your screen under a microscope, you would not see any yellow, orange, or purple lights. You would only see millions of tiny sub-pixels in three colors: red, green, and blue. 
 

@@ -58,13 +58,13 @@ export default function ContactCTA() {
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-10 md:mb-14">
           <span className="text-[10px] sm:text-xs font-bold uppercase tracking-widest text-electric bg-indigo-950/80 border border-electric/30 px-3.5 py-1 rounded-full mb-4 inline-block">
-            Institutional Partnership
+            School Partnerships
           </span>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white tracking-tight leading-tight mb-4">
-            Bring Clinical Physical Pedagogy to <span className="text-transparent bg-clip-text bg-gradient-to-r from-electric to-orange-400">Your School.</span>
+            Bring Real Engineering &amp; Inquiry to <span className="text-transparent bg-clip-text bg-gradient-to-r from-electric to-orange-400">Your School.</span>
           </h2>
           <p className="text-xs sm:text-sm md:text-base text-slate-300 font-medium leading-relaxed">
-            Schedule a 30-minute consultation directly with our curriculum architecture team or send an asynchronous inquiry.
+            Pick a 30-minute slot on my calendar for a live lab and curriculum walkthrough, or drop a message below.
           </p>
 
           {/* Mode Switcher Tabs */}

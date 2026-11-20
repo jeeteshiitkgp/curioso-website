@@ -16,7 +16,7 @@ export const schoolPitches = {
     pitchCourse: "60-Hour Robotics & EV Continuum",
     headline: "Taking IB STEM from Siloed Kits to Lived Engineering.",
     benefits: [
-      "Zero physical infrastructure buildout required—we bring the mobile project labs.",
+      "No expensive hardware buildout required: we use an open-market Bill of Materials.",
       "Delivered by elite, IIT-trained facilitators.",
       "Deeply project-based: Students design and race fully functional electric vehicles."
     ]

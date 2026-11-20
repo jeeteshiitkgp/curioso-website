@@ -116,10 +116,10 @@ export default async function LessonView({ params }) {
                   Ready to implement this at your school?
                 </p>
                 <Link 
-                  href="/experience" 
+                  href="/programs" 
                   className="block w-full text-center bg-space hover:bg-indigo-900 text-white font-bold py-3 px-6 rounded-xl transition-all duration-300 shadow-md hover:shadow-xl text-[10px] sm:text-xs md:text-sm lg:text-base"
                 >
-                  View Full Pedagogy
+                  Explore School Programs
                 </Link>
               </div>
             </div>

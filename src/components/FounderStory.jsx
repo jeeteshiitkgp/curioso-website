@@ -7,21 +7,21 @@ export default function FounderStory() {
       <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-electric/10 rounded-full blur-[100px] mix-blend-screen pointer-events-none"></div>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="grid lg:grid-cols-2 gap-20 items-center">
-          
+
           <div className="order-2 lg:order-1">
-            <h2 className="text-sm font-bold tracking-[0.2em] text-cyan uppercase mb-4">The Vision</h2>
+            <h2 className="text-sm font-bold tracking-[0.2em] text-cyan uppercase mb-4">From the Founder</h2>
             <h3 className="text-4xl md:text-5xl font-extrabold text-white mb-8 tracking-tight leading-tight">
-              Education shouldn't be about ticking boxes.
+              Memorizing definitions passes exams. It does not build engineers.
             </h3>
             <p className="text-lg text-slate-300 mb-6 leading-relaxed font-medium">
-              I've always believed learning should inspire curiosity, not just memorization. My journey started as a student fueled by questions, driven by late-night discoveries, and guided by mentors who showed me that real growth happens when we see connections beyond the textbook.
+              Walk into any 4th-grade class and ask for the strongest shape, and forty hands shout "Triangle." Four years later, those same kids prove the SSS triangle congruence theorem in 8th-grade geometry. Yet hand them a flat sheet of paper and ask them to hold up twenty coins across two coffee mugs, and they freeze. Nobody ever showed them that both lessons describe the exact same physical reality.
             </p>
             <p className="text-lg text-slate-300 mb-10 leading-relaxed font-medium">
-              After seeing firsthand how traditional classrooms can selectively dim that distinct spark, I set out to create something entirely different: a place where students are encouraged to wonder, explore, and freely find their own "why."
+              After graduating in Aerospace Engineering from IIT Kharagpur, I spent the last decade designing science and math curricula and assessments for 500+ schools and 200,000+ students. I built Curioso because pricey lab kits only teach kids how to follow a manual. Real intuition comes from working through the friction of raw materials.
             </p>
             <div className="flex items-center gap-5 bg-indigo-950/40 p-5 rounded-2xl border border-indigo-500/20 backdrop-blur-sm max-w-sm">
               <div className="w-16 h-16 rounded-full bg-indigo-900 border-2 border-indigo-400/50 overflow-hidden shadow-[0_0_15px_rgba(6,182,212,0.3)] shrink-0">
-                 <img src="/founder.jpg" alt="Jeetesh Gulani" className="w-full h-full object-cover" onError={(e) => { e.target.onerror = null; e.target.src = "https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80&w=200&h=200"; }} />
+                <img src="/founder.jpg" alt="Jeetesh Gulani" className="w-full h-full object-cover" onError={(e) => { e.target.onerror = null; e.target.src = "https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80&w=200&h=200"; }} />
               </div>
               <div>
                 <h4 className="font-bold text-white text-lg">Jeetesh Gulani</h4>

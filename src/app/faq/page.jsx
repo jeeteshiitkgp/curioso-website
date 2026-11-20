@@ -1,14 +1,14 @@
 import Link from 'next/link';
 
 export const metadata = {
-  title: "Frequently Asked Questions | Curioso Curriculum Architecture",
-  description: "Comprehensive institutional FAQs for school trustees, principals, and academic coordinators regarding NEP 2020 compliance, no-kit physical pedagogy, setup costs, and teacher training.",
+  title: "Frequently Asked Questions | Curioso School Programs & STEM Labs",
+  description: "Plain answers for school trustees, principals, and academic coordinators on NEP 2020 compliance, no-kit STEM and innovation labs, setup costs, and teacher training.",
   alternates: {
     canonical: "https://www.curioso.school/faq",
   },
   openGraph: {
-    title: "Institutional FAQs | Curioso Curriculum Architecture",
-    description: "Detailed answers on implementing clinical-grade physical science & math curricula in CBSE & ICSE schools across India.",
+    title: "School FAQs | Curioso",
+    description: "Answers on setting up low-cost STEM labs and hands-on science and math curricula in CBSE, ICSE, IB, and IGCSE schools across India.",
     url: "https://www.curioso.school/faq",
   }
 };
@@ -18,32 +18,32 @@ export default function FAQPage() {
     {
       category: "NEP 2020 & Board Alignment",
       question: "How does Curioso help CBSE and ICSE schools comply with NEP 2020 mandates?",
-      answer: "Curioso provides a clinical-grade physical curriculum mapped directly to NCERT, CBSE, and ICSE competency-based learning milestones. Rather than treating practicals as a disconnected extracurricular club, Curioso operates as a structured application layer integrated directly into regular science and math class hours."
+      answer: "Curioso provides a structured physical curriculum mapped directly to NCERT, CBSE, and ICSE competency-based learning milestones. Rather than treating practicals as a disconnected Saturday hobby club, we weave hands-on inquiry straight into regular science and math class hours."
     },
     {
       category: "Pedagogy & No-Kit Mechanics",
       question: "How does Curioso differ from traditional robotics labs or Atal Tinkering Labs (ATL)?",
-      answer: "Traditional robotics labs rely on expensive, pre-calibrated plastic kits where parts only snap together in one predetermined way, teaching algorithmic assembly. Curioso enforces a 'No-Kit' philosophy: students build from raw, domestic materials (copper wire, syringes, wood, paper, sheet metal) to force genuine mechanical troubleshooting, spatial intuition, and first-principles physics."
+      answer: "Traditional robotics labs rely on expensive, pre-calibrated plastic kits where parts only snap together one way, teaching manual-following. Curioso enforces a 'No-Kit' rule: students build from raw domestic materials (copper wire, syringes, wood, paper, sheet metal) so they actually debug mechanical failures and grasp first-principles physics."
     },
     {
       category: "Setup Costs & Economics",
       question: "What is the cost of implementing Curioso compared to a traditional STEM lab?",
-      answer: "Traditional STEM labs require ₹10 Lakhs to ₹25 Lakhs in fragile imported hardware and steep recurring kit replenishment fees. Curioso operates on an IP and curriculum licensing model with zero hardware lock-in. Schools procure basic raw materials locally from open markets, reducing total implementation and recurring costs by over 80%."
+      answer: "Traditional STEM and innovation labs require ₹10 Lakhs to ₹25 Lakhs in fragile imported hardware plus steep annual kit replenishment fees. Curioso licenses the curriculum IP with zero hardware lock-in. Schools procure basic raw materials locally from open markets, cutting total setup and recurring costs by over 80%."
     },
     {
       category: "Teacher Training & Enablement",
       question: "Do existing science and math teachers need specialized engineering or coding backgrounds?",
-      answer: "No. Curioso provides turnkey Socratic facilitation blueprints, teacher diagnostic training, and physical anomaly guides for existing school faculty. Teachers are equipped with structured questioning frameworks and cognitive redirection steps rather than dry lecture scripts."
+      answer: "No. Curioso gives your existing teachers step-by-step Socratic questioning guides, physical anomaly checklists, weekly prep syncs, and monthly campus workshops so they run every session without external vendor trainers."
     },
     {
       category: "Curriculum Scope & Grades",
       question: "What grades and age groups does the Curioso curriculum cover?",
-      answer: "Curioso covers Grades 1 through 10 across four developmental stages: Foundational (Grades 1-2), Preparatory (Grades 3-5), Middle (Grades 6-8), and Secondary (Grades 9-10), forming a continuous 45-node cross-linked progression across Physics, Mathematics, Biology, and Design Mechanics."
+      answer: "Curioso covers Grades 1 through 10 across four stages: Foundational (Grades 1 to 2), Preparatory (Grades 3 to 5), Middle (Grades 6 to 8), and Secondary (Grades 9 to 10), forming a connected 45-node progression across Physics, Mathematics, Biology, and Design Mechanics."
     },
     {
       category: "Classroom Logistics & Safety",
       question: "How does a school manage raw materials and classroom logistics safely?",
-      answer: "Every Curioso node is engineered for domestic classroom safety using non-hazardous, low-voltage, and everyday materials. Schools receive an exhaustive Bill of Materials (BOM) detailing exact local procurement sources, storage protocols, and modular student distribution trays."
+      answer: "Every Curioso activity is built for safe classroom execution using low-voltage power and everyday materials. Schools get a clear Bill of Materials (BOM) showing exactly what to buy locally, how to store it safely, and how to distribute trays across batches."
     }
   ];
 
@@ -74,13 +74,13 @@ export default function FAQPage() {
               
               <div className="col-span-8 md:col-span-7 max-w-2xl">
                 <span className="text-[10px] sm:text-xs font-bold uppercase tracking-widest text-electric bg-indigo-950/80 border border-electric/30 px-3 py-1 rounded-full mb-4 inline-block">
-                  Institutional Architecture
+                  School FAQ
                 </span>
                 <h1 className="text-3xl sm:text-5xl md:text-6xl font-extrabold text-white tracking-tight leading-[1.1] mb-6">
                   Frequently Asked <span className="text-transparent bg-clip-text bg-gradient-to-r from-electric to-orange-400">Questions.</span>
                 </h1>
                 <p className="text-xs sm:text-sm md:text-base lg:text-lg text-slate-300 font-medium leading-relaxed">
-                  Everything school directors, trustees, and academic coordinators need to know about implementing Curioso's clinical physical curriculum.
+                  Direct answers for school directors, trustees, and principals on setup costs, NEP 2020 compliance, raw-material safety, and teacher training.
                 </p>
               </div>
 
@@ -125,16 +125,16 @@ export default function FAQPage() {
           {/* CTA Card */}
           <div className="mt-12 md:mt-16 bg-space rounded-3xl p-8 md:p-12 border border-indigo-900/60 text-center text-white relative overflow-hidden">
             <h3 className="text-xl sm:text-3xl font-extrabold mb-4">
-              Have a specific curriculum or partnership query?
+              Have a question about your school's timetable or lab budget?
             </h3>
             <p className="text-xs sm:text-sm md:text-base text-slate-300 max-w-2xl mx-auto mb-8 leading-relaxed">
-              We work directly with school leadership to integrate clinical physical learning into regular academic timetables.
+              Let's get on a 30-minute call and look at how this fits your classrooms and existing science and math teachers.
             </p>
             <Link 
               href="/#contact"
               className="inline-flex items-center justify-center bg-electric hover:bg-orange-600 text-white font-bold text-xs sm:text-sm px-6 py-3.5 rounded-full transition-colors shadow-lg"
             >
-              Schedule an Institutional Consultation &rarr;
+              Book a 30-Min Call &rarr;
             </Link>
           </div>
         </div>

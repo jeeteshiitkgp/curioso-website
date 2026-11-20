@@ -18,10 +18,10 @@ export default function About() {
             
             <div className="col-span-8 md:col-span-7 max-w-2xl">
               <h1 className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold text-white tracking-tight leading-[1.1] mb-6">
-                The Vision & <span className="text-transparent bg-clip-text bg-gradient-to-r from-electric to-orange-400">The Driver.</span>
+                Why I Built <span className="text-transparent bg-clip-text bg-gradient-to-r from-electric to-orange-400">Curioso.</span>
               </h1>
               <p className="text-xs sm:text-sm md:text-base lg:text-lg text-slate-300 font-medium leading-relaxed">
-                Breaking predetermined molds to cultivate curiosity from the ground up.
+                Breaking the memorization and plastic-kit loop so school kids learn how things actually work.
               </p>
             </div>
 
@@ -46,54 +46,54 @@ export default function About() {
         <section className="mb-12 md:mb-16">
           <h2 className="text-[8px] sm:text-xs font-bold tracking-[0.2em] text-electric uppercase mb-2 sm:mb-4">The Origin Story</h2>
           <h3 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold text-space mb-6 sm:mb-8 tracking-tight">
-            Curiosity is not taught, it's <span className="underline decoration-electric decoration-4 underline-offset-4 cursor-text">ignited.</span>
+            Why one shadow math lesson changed everything.
           </h3>
           
           <div className="text-[10px] sm:text-xs md:text-sm lg:text-base text-slate-600 font-medium leading-relaxed space-y-6">
             <p>
-              I started teaching at the age of 14 when I started tutoring my friends. Ironically, I was just an average student in school who wanted to study commerce after grade 10, until fate introduced me to three remarkable teachers.
+              I started teaching my friends at 14. Funny enough, I was an average student in school and planned to take commerce after Grade 10. Three teachers changed that.
             </p>
             <p>
-              First, my 10th-grade math teacher, Giri sir illuminated the classroom with engaging lessons that tied math to the real world. I remember when he guided me to discover the height of a water tower using the size of its shadow, our own shadows, and the concepts of trigonometry. 
+              My 10th-grade math teacher, Giri sir, took trigonometry out of the textbook. I still remember him making us find the height of a water tower using only the length of its shadow, our own shadows, and basic ratios. For the first time, math was not symbols on a chalkboard, it was a physical tool.
             </p>
             <p>
-              The other two, who guided me through grades 11 and 12, instilled in me the virtues of diligence and resilience. I still remember solving Chemistry question papers with Shashi sir late into the night, not only because he wanted me to practice, but also because we were both deeply invested in the subject matter. 
+              Two other teachers in Grades 11 and 12 pushed me to grind through tough problems until they clicked. I still remember solving Chemistry papers with Shashi sir late into the night because neither of us wanted to leave a question half-understood.
             </p>
             <div className="bg-orange-50 border-l-4 border-electric p-4 sm:p-6 rounded-r-xl sm:rounded-r-2xl my-6 sm:my-8">
               <p className="font-semibold text-space m-0">
-                Collectively, they ignited my passion for the subjects I now teach and, more profoundly, nurtured a boundless curiosity about the world. This directly guided me towards graduating as an Aerospace Engineer from IIT Kharagpur, and spending the next 7+ years as a STEM educator and curriculum designer.
+                That shift took me to IIT Kharagpur for Aerospace Engineering, and then into 10+ years of building K-12 science and math programs and assessments across 500+ schools and 200,000+ students.
               </p>
             </div>
             <p>
-              I've come to realize that the present education system often falls short in nurturing this intrinsic drive; instead, it attempts to shape students into a predetermined mold. With tedious lectures and overwhelming homework, students find themselves with scarce time and energy to explore their innate curiosity.
+              The pattern inside Indian schools has not changed much since I sat in class. Kids spend years memorizing definitions and solving template numericals to pass exams, with almost zero time left to touch real materials and figure out why something works or breaks.
             </p>
           </div>
         </section>
 
         {/* The Builder Section */}
         <section className="mb-12 md:mb-16">
-          <h2 className="text-[8px] sm:text-xs font-bold tracking-[0.2em] text-cyan uppercase mb-2 sm:mb-4">The Engine Builder</h2>
+          <h2 className="text-[8px] sm:text-xs font-bold tracking-[0.2em] text-cyan uppercase mb-2 sm:mb-4">The Track Record</h2>
           <h3 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold text-space mb-6 sm:mb-8 tracking-tight">
-            A decade scaling EdTech and building curriculum architectures.
+            A decade building K-12 science, math, and assessment products.
           </h3>
           
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-8 my-8 sm:my-10">
              <div className="bg-white p-6 sm:p-8 rounded-3xl shadow-sm border border-slate-100 hover:shadow-md transition-shadow flex flex-col items-start pt-8 sm:pt-10">
-               <h4 className="text-sm sm:text-lg md:text-xl lg:text-2xl font-bold text-space mb-2 sm:mb-3">Product Leadership</h4>
-               <p className="text-[10px] sm:text-xs md:text-sm lg:text-base text-slate-600 font-medium">Built learning experiences from the ground up, from content architecture to platform launch across major EdTechs like Cuemath and LogiQids.</p>
+               <h4 className="text-sm sm:text-lg md:text-xl lg:text-2xl font-bold text-space mb-2 sm:mb-3">Product &amp; Scale</h4>
+               <p className="text-[10px] sm:text-xs md:text-sm lg:text-base text-slate-600 font-medium">Built and scaled math, science, and reasoning programs from scratch at Cuemath and LogIQids, working across product, student UX, and B2B school rollouts.</p>
              </div>
              <div className="bg-white p-6 sm:p-8 rounded-3xl shadow-sm border border-slate-100 hover:shadow-md transition-shadow flex flex-col items-start pt-8 sm:pt-10">
-               <h4 className="text-sm sm:text-lg md:text-xl lg:text-2xl font-bold text-space mb-2 sm:mb-3">Curriculum Frameworks</h4>
-               <p className="text-[10px] sm:text-xs md:text-sm lg:text-base text-slate-600 font-medium">Authored Science and Math frameworks deployed globally. Realigned online testing architectures and diagnostic assessment models.</p>
+               <h4 className="text-sm sm:text-lg md:text-xl lg:text-2xl font-bold text-space mb-2 sm:mb-3">Assessments &amp; Curricula</h4>
+               <p className="text-[10px] sm:text-xs md:text-sm lg:text-base text-slate-600 font-medium">Designed conceptual science assessments for 250+ CBSE and ICSE schools and national math challenges reaching tens of thousands of students.</p>
              </div>
           </div>
 
           <div className="text-[10px] sm:text-xs md:text-sm lg:text-base text-slate-600 font-medium leading-relaxed space-y-6">
             <p>
-              During my last role, I was the Vice President of an EdTech firm, driving product and customer experience. Even though I had oversight of the entire curriculum and student experience, it was evident that the gaps created by their daily traditional schooling were too significant to be filled by an after-school intervention alone.
+              As VP of Curriculum and Product in consumer edtech, I saw the real limit of after-school apps and tutoring: you cannot fix a child's daily schooling habits in a 1-hour weekend class when Monday through Friday is pure rote memorization.
             </p>
             <p>
-              Through these experiences, I uncovered what I believe is the absolute essence of impactful education: cultivating curiosity and explicit practical application simultaneously.
+              To change how students actually think, you have to work inside the school itself, alongside the regular science and math syllabus, using raw physical materials rather than expensive kit boxes.
             </p>
           </div>
         </section>
@@ -102,15 +102,15 @@ export default function About() {
         <section className="bg-space text-white p-8 sm:p-16 rounded-[2.5rem] sm:rounded-[3rem] shadow-xl relative overflow-hidden">
            <div className="absolute top-0 right-0 w-[400px] h-[400px] bg-electric/20 rounded-full blur-[100px] pointer-events-none"></div>
            <div className="relative z-10">
-            <h2 className="text-[8px] sm:text-xs font-bold tracking-[0.2em] text-electric uppercase mb-2 sm:mb-4">The Mission</h2>
+            <h2 className="text-[8px] sm:text-xs font-bold tracking-[0.2em] text-electric uppercase mb-2 sm:mb-4">How We Work With Schools</h2>
             <h3 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold mb-6 sm:mb-8 tracking-tight text-white leading-tight">
               Partnering with progressive schools to build real engineering intuition, not glass-cupboard showrooms.
             </h3>
             <p className="text-[10px] sm:text-xs md:text-sm lg:text-base text-slate-300 font-medium leading-relaxed mb-6">
-              Curioso partners directly with forward-thinking CBSE, ICSE, IB, and IGCSE schools across India as their curriculum architect and makerspace consultant. We do not sell proprietary plastic kits or lock schools into expensive hardware vendor contracts.
+              Curioso partners directly with CBSE, ICSE, IB, and IGCSE schools across India to set up low-cost STEM and innovation labs and run hands-on curriculum inside regular periods. We do not sell hardware, mark up electronics, or lock schools into proprietary kit contracts.
             </p>
             <p className="text-[10px] sm:text-xs md:text-sm lg:text-base text-slate-300 font-medium leading-relaxed">
-              Instead, we license a structured physical curriculum built on an open-market Bill of Materials, train and induct your science and math faculty through weekly Socratic syncs and monthly campus workshops, and turn regular classrooms into active engineering labs.
+              We license the structured physical curriculum, hand your team an open-market Bill of Materials bought at wholesale rates, help hire or train your permanent science and math faculty through weekly syncs and monthly campus workshops, and let your students build from scratch.
             </p>
            </div>
         </section>

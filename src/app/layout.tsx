@@ -10,18 +10,19 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.curioso.school"),
   title: {
-    default: "Curioso | Curiosity-Driven School Program, STEM Curriculum & Makerspace Consultants",
+    default: "Curioso | School STEM & Innovation Lab Setup, Curiosity Classroom & Project-Based Learning",
     template: "%s | Curioso"
   },
-  description: "Proprietary physical curriculum architecture for CBSE, ICSE, IB, and IGCSE schools in India. Replaces sterile robotics kits with curiosity-driven hands-on mechanics and open-market makerspace consulting aligned with NEP 2020.",
+  description: "Proprietary physical curriculum architecture for CBSE, ICSE, IB, and IGCSE schools in India. Replaces expensive robotics labs and kits with open-market STEM and innovation labs, activity-based curiosity classrooms, and project-based learning aligned with NEP 2020.",
   keywords: [
-    "curiosity driven school program",
-    "STEM school program India",
-    "makerspace school consultants",
+    "school stem lab setup India",
+    "innovation lab for schools India",
+    "project based learning schools India",
+    "activity based learning science math",
+    "math lab for schools",
+    "robotics lab alternative",
+    "tinkering lab without kits",
     "NEP 2020 experiential learning curriculum",
-    "competency based learning CBSE ICSE",
-    "hands on science curriculum for schools India",
-    "no-kit STEM lab alternative",
     "Jeetesh Gulani"
   ],
   authors: [{ name: "Jeetesh Gulani", url: "https://www.curioso.school/about" }],
@@ -81,7 +82,7 @@ export default function RootLayout({
     "alternateName": ["Curioso", "Curioso School"],
     "url": "https://www.curioso.school",
     "logo": "https://www.curioso.school/curioso_hero_robot.png",
-    "description": "Proprietary physical curriculum architecture, curiosity-driven school programs, STEM school programs, and vendor-neutral makerspace school consulting for progressive K-12 schools in India.",
+    "description": "Proprietary physical curriculum architecture, Curiosity Classroom activity-based learning, school STEM and innovation lab setups, and multi-week project-based learning for progressive K-12 schools in India.",
     "sameAs": [
       "https://www.linkedin.com/in/jeeteshgulani/",
       "https://jeeteshgulani.substack.com"
@@ -101,9 +102,11 @@ export default function RootLayout({
       "name": "India"
     },
     "knowsAbout": [
-      "Curiosity-Driven School Program",
-      "STEM School Program",
-      "Makerspace School Consulting",
+      "School STEM Lab Setup",
+      "School Innovation Lab Setup",
+      "Project-Based Learning",
+      "Activity-Based Learning",
+      "Physical Math Lab",
       "NEP 2020 Experiential Learning",
       "No-Kit Physical Science Curriculum",
       "CBSE Science Curriculum",

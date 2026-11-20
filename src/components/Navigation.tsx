@@ -17,16 +17,19 @@ export default function Navigation() {
 
   const anchorLinks = [
     { name: "Why 'Why' Matters", path: '/#problem' },
-    { name: 'Courses', path: '/courses' },
+    { name: 'Programs', path: '/programs' },
     { name: 'About', path: '/about' },
     { name: 'FAQ', path: '/faq' }
   ];
+
+  const isActivePath = (path: string) =>
+    path === '/programs' ? pathname.startsWith('/programs') : pathname === path;
 
   return (
     <nav className="sticky top-0 z-50 bg-space border-b border-indigo-900/50 shadow-sm backdrop-blur-md bg-opacity-98">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-24 items-center">
-          
+
           {/* Logo */}
           <div className="flex flex-col items-center select-none cursor-pointer">
             <Link href="/" className="flex items-center text-[2.5rem] font-black tracking-tighter hover:opacity-90 transition-opacity" style={{ color: '#E84118', lineHeight: '1' }}>
@@ -45,7 +48,7 @@ export default function Navigation() {
             </Link>
             <span className="text-[9px] font-bold uppercase tracking-[0.15em] text-cyan mt-1">Engineered for Curiosity</span>
           </div>
-          
+
           {/* Desktop Nav */}
           <div className="hidden lg:flex ml-6 space-x-3 xl:space-x-6 items-center">
             {anchorLinks.map((link) => (
@@ -61,26 +64,24 @@ export default function Navigation() {
                 <Link
                   key={link.name}
                   href={link.path}
-                  className={`${
-                    pathname === link.path
-                      ? 'text-electric border-b-2 border-electric'
-                      : 'text-slate-300 hover:text-ivory hover:border-b-2 border-transparent transition-all duration-300'
-                  } px-2 py-2 text-xs xl:text-sm font-semibold tracking-wide whitespace-nowrap`}
+                  className={`${isActivePath(link.path)
+                    ? 'text-electric border-b-2 border-electric'
+                    : 'text-slate-300 hover:text-ivory hover:border-b-2 border-transparent transition-all duration-300'
+                    } px-2 py-2 text-xs xl:text-sm font-semibold tracking-wide whitespace-nowrap`}
                 >
                   {link.name}
                 </Link>
               )
             ))}
-            
+
             {navLinks.map((link) => (
               <Link
                 key={link.name}
                 href={link.path}
-                className={`${
-                  pathname === link.path
-                    ? 'text-electric border-b-2 border-electric'
-                    : 'text-slate-300 hover:text-ivory hover:border-b-2 border-transparent transition-all duration-300'
-                } px-2 py-2 text-xs xl:text-sm font-semibold tracking-wide whitespace-nowrap`}
+                className={`${pathname === link.path
+                  ? 'text-electric border-b-2 border-electric'
+                  : 'text-slate-300 hover:text-ivory hover:border-b-2 border-transparent transition-all duration-300'
+                  } px-2 py-2 text-xs xl:text-sm font-semibold tracking-wide whitespace-nowrap`}
               >
                 {link.name}
               </Link>
@@ -110,24 +111,37 @@ export default function Navigation() {
         <div className="lg:hidden bg-space border-b border-indigo-800">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
             {anchorLinks.map((link) => (
-              <a
-                key={link.name}
-                href={link.path}
-                className="text-slate-300 hover:bg-indigo-800 hover:text-white block px-3 py-2 rounded-md text-base font-semibold"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                {link.name}
-              </a>
+              link.path.startsWith('/#') ? (
+                <a
+                  key={link.name}
+                  href={link.path}
+                  className="text-slate-300 hover:bg-indigo-800 hover:text-white block px-3 py-2 rounded-md text-base font-semibold"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  {link.name}
+                </a>
+              ) : (
+                <Link
+                  key={link.name}
+                  href={link.path}
+                  className={`${isActivePath(link.path)
+                    ? 'bg-indigo-900/50 text-electric'
+                    : 'text-slate-300 hover:bg-indigo-800 hover:text-white'
+                    } block px-3 py-2 rounded-md text-base font-semibold`}
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  {link.name}
+                </Link>
+              )
             ))}
             {navLinks.map((link) => (
               <Link
                 key={link.name}
                 href={link.path}
-                className={`${
-                  pathname === link.path
-                    ? 'bg-indigo-900/50 text-electric'
-                    : 'text-slate-300 hover:bg-indigo-800 hover:text-white'
-                } block px-3 py-2 rounded-md text-base font-semibold uppercase`}
+                className={`${pathname === link.path
+                  ? 'bg-indigo-900/50 text-electric'
+                  : 'text-slate-300 hover:bg-indigo-800 hover:text-white'
+                  } block px-3 py-2 rounded-md text-base font-semibold uppercase`}
                 onClick={() => setIsMenuOpen(false)}
               >
                 {link.name}

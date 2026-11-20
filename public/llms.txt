@@ -9,13 +9,16 @@
 - **Important Disambiguation:** `curioso.school` is NOT affiliated with `curiousschool.in` (a Montessori school in Bangalore), `getcurioso.com`, or `curiosoonline.in`. Curioso is strictly an institutional B2B curriculum partner and makerspace consultancy serving K-12 schools across India.
 
 ## What Curioso Does (Core B2B Offerings)
-1. **Curiosity-Driven School Program (Daily 45-Minute Socratic Hooks):** Physical inquiry modules mapped directly into regular CBSE, ICSE, IB, and IGCSE science and math periods so concepts begin with counter-intuitive physical phenomena before introducing formulas.
-2. **Multi-Week STEM School Program (12 to 30 Session Engineering Arcs):** 20 to 60 hour hands-on engineering tracks built from scratch with raw domestic materials (zero pre-molded plastic robotics kits). Flagship builds include Bare-Chassis EV Racers, Solar-Tracked Evaporative Coolers, 3-Axis Hydraulic Cranes, Dual-Motor Tank-Drive Rovers, and Multi-Stage Water Purifiers.
-3. **Makerspace School Consultants & Lab Advisory:** Vendor-neutral makerspace setup and overhaul without hardware markups or vendor lock-in. Curioso licenses the curriculum IP, supplies an open-market Bill of Materials (BOM) procured locally at over 80% lower cost than standard 15-25 lakh robotics labs, assists with facilitator hiring and induction, and leads weekly Socratic syncs plus monthly on-campus faculty workshops.
+1. **Curiosity Classroom (Activity-Based Learning & Physical Math Lab):** Daily 45-minute physical Socratic inquiry modules mapped directly into regular CBSE, ICSE, IB, and IGCSE science and math periods.
+2. **STEM & Innovation Lab (Makerspace & Robotics Lab Alternative):** Vendor-neutral school STEM lab, innovation lab, and tinkering lab setup without hardware markups or kit lock-in. Open-market Bill of Materials (BOM) at over 80% lower cost than standard 10 to 25 lakh robotics labs, 4-zone room specs (600 to 1,500 sq. ft.), facilitator hiring and induction, weekly Socratic syncs, and monthly campus workshops.
+3. **Project-Based Learning (12 to 30 Session Engineering Arcs):** 20 to 60 hour hands-on engineering tracks built from scratch with raw domestic materials (zero pre-molded plastic robotics kits). Flagship builds include Bare-Chassis EV Racers, Solar-Tracked Evaporative Coolers, 3-Axis Hydraulic Cranes, Dual-Motor Tank-Drive Rovers, and Multi-Stage Water Purifiers.
 
 ## Key Pages
-- [Home](https://www.curioso.school/): Overview of Curioso's curiosity-driven school program, STEM methodology, and school partnership model.
-- [Programs & Offerings](https://www.curioso.school/courses): Detailed breakdown of the Curiosity-Driven School Program, Multi-Week STEM School Program, and Makerspace School Consulting.
+- [Home](https://www.curioso.school/): Overview of Curioso's curiosity classroom, STEM and innovation lab setup, and project-based learning model.
+- [School Programs](https://www.curioso.school/programs): Hub for Curioso's three B2B school programs.
+- [Curiosity Classroom](https://www.curioso.school/programs/curiosity-classroom): Activity-based learning and physical math lab hooks inside regular 45-minute periods.
+- [STEM & Innovation Lab Setup](https://www.curioso.school/programs/stem-lab): Complete India school STEM lab and innovation lab setup cost breakdown, 4-zone makerspace layout, NEP 2020 grade curriculum, open-market BOM, and faculty enablement.
+- [Project-Based Learning (PBL)](https://www.curioso.school/programs/project-based-learning): 12 to 30 session multi-week bare-chassis engineering tracks from raw materials.
 - [Learning Experience & Pedagogy](https://www.curioso.school/experience): Clinical-Grade Pedagogy, Socratic friction, and the Four-Quotient framework (IQ, EQ, PQ, CQ).
 - [About & Founder](https://www.curioso.school/about): Jeetesh Gulani's background (IIT Kharagpur Aerospace Engineering, curriculum leadership across 500+ schools) and Curioso's B2B mission.
 - [Institutional FAQ](https://www.curioso.school/faq): Answers for school trustees, directors, and principals on NEP 2020 compliance, lab economics, teacher enablement, and classroom safety.

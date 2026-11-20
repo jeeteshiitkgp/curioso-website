@@ -23,12 +23,12 @@ export async function generateMetadata({ params }) {
 
   const cleanDescription = article.content
     ? article.content.replace(/[#*!\[\]\(\)]/g, '').substring(0, 160).trim() + '...'
-    : 'Read the latest pedagogical insight from Curioso.';
+    : 'Classroom notes and essays from Curioso.';
 
   const articleUrl = `https://www.curioso.school/blog/${article.id}`;
 
   return {
-    title: `${article.title} | Curioso Perspectives`,
+    title: `${article.title} | Curioso`,
     description: cleanDescription,
     alternates: {
       canonical: articleUrl,
@@ -130,10 +130,16 @@ export default async function ArticleView({ params }) {
 
       // List Items
       if (paragraph.startsWith('- ') || paragraph.startsWith('* ')) {
+        const formatInline = (text) =>
+          text
+            .replace(/^[-*]\s+/, '')
+            .replace(/\*\*(.*?)\*\*/g, '<strong class="font-bold text-space">$1</strong>')
+            .replace(/\*(.*?)\*/g, '<em class="italic">$1</em>')
+            .replace(/`([^`]+)`/g, '<code class="bg-slate-100 px-1.5 py-0.5 rounded text-sm text-space font-mono">$1</code>')
+            .replace(/\[(.*?)\]\((.*?)\)/g, '<a href="$2" class="text-electric hover:underline font-semibold">$1</a>');
+
         const lis = paragraph.split('\n').map((li, i) => (
-          <li key={i} className="mb-2">
-            {li.replace(/^[-*]\s+/, '')}
-          </li>
+          <li key={i} className="mb-2" dangerouslySetInnerHTML={{ __html: formatInline(li) }} />
         ));
         return (
           <ul key={index} className="list-disc pl-6 mb-6 text-base sm:text-lg text-slate-700 leading-relaxed space-y-2">
@@ -193,7 +199,7 @@ export default async function ArticleView({ params }) {
             <svg className="mr-2 w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18" />
             </svg>
-            Back to Perspectives
+            Back to All Notes
           </Link>
 
           <article className="bg-white p-6 sm:p-10 md:p-16 rounded-3xl shadow-sm border border-slate-100">

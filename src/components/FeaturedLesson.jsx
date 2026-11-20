@@ -12,8 +12,8 @@ export default function FeaturedLesson() {
               Featured Lesson
             </h2>
           </div>
-          <Link 
-            href="/lessons" 
+          <Link
+            href="/lessons"
             className="hidden md:flex items-center text-electric font-semibold hover:text-space transition-colors"
           >
             View Lesson Repository <ArrowRight className="w-4 h-4 ml-2" />
@@ -27,20 +27,20 @@ export default function FeaturedLesson() {
               <span className="inline-block bg-electric text-space font-bold uppercase tracking-widest text-xs px-3 py-1 rounded-full mb-6">Physics Demo</span>
               <h3 className="text-3xl font-extrabold text-white mb-4 leading-tight">The Bernoulli Paper Experiment</h3>
               <p className="text-slate-300 italic mb-8">"Why does blowing air between two sheets of paper pull them together?"</p>
-              
+
               <div className="flex items-center gap-4 text-cyan text-sm font-semibold mb-8">
                 <span className="flex items-center"><Wrench className="w-4 h-4 mr-2" /> 2 Sheets of Paper</span>
               </div>
 
-              <Link 
-                href="/lessons/bernoulli-paper-experiment" 
+              <Link
+                href="/lessons/bernoulli-paper-experiment"
                 className="inline-flex items-center justify-center bg-electric text-space font-bold py-3 px-6 rounded-xl hover:bg-orange-500 hover:text-white transition-colors w-max"
               >
                 Access Lesson
               </Link>
             </div>
           </div>
-          
+
           <div className="lg:w-3/5 p-12">
             <h4 className="text-xl font-bold text-space mb-4">Breaking Intuition</h4>
             <p className="text-slate-600 mb-6 leading-relaxed">
@@ -49,7 +49,7 @@ export default function FeaturedLesson() {
             <p className="text-slate-600 mb-6 leading-relaxed">
               If you want a student to actually understand physics, you cannot start with the textbook. You must start with a problem that breaks their intuition. By using nothing but two sheets of paper, we can simulate the exact invisible forces that keep a 400-ton Boeing 747 in the sky.
             </p>
-            
+
             <div className="mt-8 pt-8 border-t border-slate-100">
               <p className="text-sm font-bold text-slate-400 uppercase tracking-widest mb-4">Core Concepts Covered</p>
               <div className="flex flex-wrap gap-2">
@@ -60,10 +60,10 @@ export default function FeaturedLesson() {
             </div>
           </div>
         </div>
-        
+
         <div className="mt-8 text-center md:hidden">
-          <Link 
-            href="/lessons" 
+          <Link
+            href="/lessons"
             className="inline-flex items-center text-electric font-semibold hover:text-space transition-colors"
           >
             View Lesson Repository <ArrowRight className="w-4 h-4 ml-2" />

@@ -3,8 +3,8 @@ import { lessons } from '@/data/lessons';
 import { ArrowRight, Clock } from 'lucide-react';
 
 export const metadata = {
-  title: "Clinical-Grade Physics & STEM Lessons",
-  description: "Explore our database of open-source experiential science lessons. We provide NCERT CBSE, ICSE, IB, and IGCSE aligned physics activities with zero expensive lab hardware required.",
+  title: "No-Kit Physics & STEM Classroom Lessons | Curioso",
+  description: "Open-access science and physics demonstrations built with everyday materials. Mapped to NCERT, CBSE, ICSE, IB, and IGCSE classrooms with zero expensive kits.",
   alternates: {
     canonical: "https://www.curioso.school/lessons",
   },
@@ -18,10 +18,10 @@ export default function Lessons() {
       <div className="bg-space text-white pt-12 pb-8 sm:pt-24 sm:pb-16 px-4">
         <div className="max-w-7xl mx-auto text-center">
           <h1 className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold mb-4 sm:mb-6 tracking-tight">
-            The <span className="text-transparent bg-clip-text bg-gradient-to-r from-electric to-orange-400">Lesson Repository</span>
+            Classroom <span className="text-transparent bg-clip-text bg-gradient-to-r from-electric to-orange-400">Lessons</span>
           </h1>
           <p className="text-xs sm:text-sm md:text-base lg:text-lg text-slate-300 max-w-2xl mx-auto font-medium leading-relaxed">
-            Discover how we teach complex scientific principles using everyday materials and productive friction.
+            Hands-on physics and science demos you can run in 15 minutes using everyday items already on a desk.
           </p>
         </div>
       </div>

@@ -23,7 +23,7 @@ export default function Layout() {
 
   const anchorLinks = [
     { name: "Why 'Why' Matters", path: '/#problem' },
-    { name: 'Courses', path: '/courses' },
+    { name: 'Programs', path: '/programs' },
     { name: 'About', path: '/about' }
   ];
 

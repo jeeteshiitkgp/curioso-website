@@ -23,7 +23,7 @@ const pillars = [
     name: 'Hands-On Discovery', 
     icon: Activity, 
     hook: "Why are the best lessons built, not memorized?",
-    desc: 'Real learning kicks in when projects stall or inevitably fall apart. Tinkering with circuits and structures turns textbook theory into lived experience, forging a relentless, unshakeable engineering mindset.' 
+    desc: 'Real learning kicks in when projects stall or fall apart. Troubleshooting circuits and raw structures turns textbook theory into real engineering intuition.' 
   },
   { 
     name: 'Self-Exploration', 

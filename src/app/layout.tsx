@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import { ClerkProvider } from '@clerk/nextjs';
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Navigation from "../components/Navigation";
@@ -115,31 +114,29 @@ export default function RootLayout({
   };
 
   return (
-    <ClerkProvider>
-      <html lang="en">
-        <head>
-          <script
-            type="application/ld+json"
-            dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
-          />
-        </head>
-        <body className={`${inter.className} min-h-screen flex flex-col bg-space text-ivory font-sans`}>
-          <Navigation />
-          <main className="flex-grow flex flex-col justify-start">
-            {children}
-          </main>
-          <div id="contact">
-            <ContactCTA />
+    <html lang="en">
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
+        />
+      </head>
+      <body className={`${inter.className} min-h-screen flex flex-col bg-space text-ivory font-sans`}>
+        <Navigation />
+        <main className="flex-grow flex flex-col justify-start">
+          {children}
+        </main>
+        <div id="contact">
+          <ContactCTA />
+        </div>
+        <footer className="bg-space text-center py-10 border-t border-indigo-900/50 mt-auto">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6">
+            <p className="text-slate-500 text-sm font-medium">
+              © {currentYear} Curioso School Foundation. Engineered for Curiosity.
+            </p>
           </div>
-          <footer className="bg-space text-center py-10 border-t border-indigo-900/50 mt-auto">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6">
-              <p className="text-slate-500 text-sm font-medium">
-                © {currentYear} Curioso School Foundation. Engineered for Curiosity.
-              </p>
-            </div>
-          </footer>
-        </body>
-      </html>
-    </ClerkProvider>
+        </footer>
+      </body>
+    </html>
   );
 }

@@ -29,9 +29,9 @@
 - [The Capex Trap: Why 15 Lakh STEM Labs Sit Locked in Glass Cupboards](https://www.curioso.school/blog/the-capex-trap)
 - [The NEP 2020 Compliance Crisis: Why Buying Robotic Kits Fails Competency Mandates](https://www.curioso.school/blog/the-nep-2020-compliance-crisis)
 - [The Unit Economics of School Labs: How to Cut Practical STEM Costs by 80%](https://www.curioso.school/blog/the-unit-economics-of-school-labs)
-- [Why Memorizing Facts Destroys Engineering Intuition](https://www.curioso.school/blog/substack-triangle-trap)
-- [The No-Kit Manifesto](https://www.curioso.school/blog/substack-9)
-- [Algorithms vs. Heuristics: Why Schools are Building the Wrong Operating System](https://www.curioso.school/blog/substack-8)
+- [Why Memorizing Facts Destroys Engineering Intuition](https://www.curioso.school/blog/why-memorizing-facts-destroys-engineering-intuition)
+- [The No-Kit Manifesto](https://www.curioso.school/blog/the-no-kit-manifesto)
+- [Algorithms vs. Heuristics: Why Schools are Building the Wrong Operating System](https://www.curioso.school/blog/algorithms-vs-heuristics)
 
 ## Contact & External Links
 - **Partnership Inquiries:** jeetesh@curioso.school

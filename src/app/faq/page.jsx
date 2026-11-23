@@ -1,14 +1,14 @@
 import Link from 'next/link';
 
 export const metadata = {
-  title: "Frequently Asked Questions | Curioso School Programs & STEM Labs",
-  description: "Plain answers for school trustees, principals, and academic coordinators on NEP 2020 compliance, no-kit STEM and innovation labs, setup costs, and teacher training.",
+  title: "School STEM & Math Lab FAQ",
+  description: "Straight answers for school trustees and principals on NEP 2020 compliance, STEM and math lab costs, open-market materials, and teacher training.",
   alternates: {
     canonical: "https://www.curioso.school/faq",
   },
   openGraph: {
-    title: "School FAQs | Curioso",
-    description: "Answers on setting up low-cost STEM labs and hands-on science and math curricula in CBSE, ICSE, IB, and IGCSE schools across India.",
+    title: "School STEM & Math Lab FAQ | Curioso",
+    description: "Straight answers for school trustees and principals on NEP 2020 compliance, STEM and math lab costs, open-market materials, and teacher training.",
     url: "https://www.curioso.school/faq",
   }
 };

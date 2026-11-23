@@ -1,8 +1,8 @@
 import Link from 'next/link';
 
 export const metadata = {
-  title: "Curiosity-Driven School Program & Clinical-Grade Pedagogy",
-  description: "How our curiosity-driven school program replaces rote memorization and sterile plastic robotics kits with physical mechanics, Socratic inquiry, and the Four-Quotient framework (IQ, EQ, PQ, CQ).",
+  title: "Hands-On Pedagogy & Four-Quotient Model",
+  description: "How Curioso replaces rote memorization and boxed plastic kits with physical mechanics, Socratic inquiry, and the Four-Quotient model (IQ, EQ, PQ, CQ).",
   alternates: {
     canonical: "https://www.curioso.school/experience",
   },

@@ -2,8 +2,8 @@ import Link from 'next/link';
 import ProgramHeader from '@/components/ProgramHeader';
 
 export const metadata = {
-  title: "Project-Based Learning (PBL) for Schools in India: Multi-Week STEM Builds",
-  description: "Structured 12 to 30 session Project-Based Learning (PBL) in science, math, and engineering for Grades 6 to 10. Students build working machines from raw domestic materials.",
+  title: "Project-Based Learning (PBL) for Schools",
+  description: "12 to 30 session Project-Based Learning in science, math, and engineering for Grades 6 to 10. Students build working machines from raw materials.",
   keywords: [
     "project based learning in schools",
     "project based learning in mathematics",
@@ -15,8 +15,8 @@ export const metadata = {
     canonical: "https://www.curioso.school/programs/project-based-learning",
   },
   openGraph: {
-    title: "Project-Based Learning (PBL) for Schools in India | Curioso",
-    description: "12 to 30 session bare-chassis engineering builds from raw materials. Five flagship builds mapped to middle and high school science and math.",
+    title: "Project-Based Learning (PBL) for Schools | Curioso",
+    description: "12 to 30 session Project-Based Learning in science, math, and engineering for Grades 6 to 10. Students build working machines from raw materials.",
     url: "https://www.curioso.school/programs/project-based-learning",
   },
 };

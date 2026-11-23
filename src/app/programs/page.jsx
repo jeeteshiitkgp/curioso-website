@@ -3,14 +3,14 @@ import ProgramHeader from '@/components/ProgramHeader';
 import { programsList } from '@/data/programs';
 
 export const metadata = {
-  title: "School Programs: Curiosity Classroom, STEM & Innovation Lab, Project-Based Learning",
-  description: "Explore Curioso's B2B K-12 school programs in India: Curiosity Classroom daily Socratic hooks, STEM & Innovation Lab setup, and multi-week Project-Based Learning.",
+  title: "School STEM Lab, Math Lab & PBL Programs",
+  description: "Explore Curioso's 3 K-12 school programs in India: Curiosity Classroom math labs, open-market STEM & innovation labs, and project-based learning.",
   alternates: {
     canonical: "https://www.curioso.school/programs",
   },
   openGraph: {
-    title: "School Programs | Curioso",
-    description: "Curiosity Classroom, STEM & Innovation Lab setup, and Project-Based Learning for progressive CBSE, ICSE, IB, and IGCSE schools.",
+    title: "School STEM Lab, Math Lab & PBL Programs | Curioso",
+    description: "Explore Curioso's 3 K-12 school programs in India: Curiosity Classroom math labs, open-market STEM & innovation labs, and project-based learning.",
     url: "https://www.curioso.school/programs",
   },
 };

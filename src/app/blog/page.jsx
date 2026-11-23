@@ -2,14 +2,14 @@ import Link from 'next/link';
 import { articles as localArticles } from '@/data/articles';
 
 export const metadata = {
-  title: "Classroom Notes & Essays | Curioso",
-  description: "Notes from the classroom on physical science, math intuition, school lab economics, NEP 2020 compliance, and why boxed kits fail students.",
+  title: "Classroom Notes & School Lab Essays",
+  description: "Notes from the classroom on physical science, math intuition, school STEM lab economics, NEP 2020 compliance, and why boxed kits fail students.",
   alternates: {
     canonical: "https://www.curioso.school/blog",
   },
   openGraph: {
-    title: "Classroom Notes & Essays | Curioso",
-    description: "Direct notes from the classroom on hands-on science, math intuition, and school STEM lab unit economics.",
+    title: "Classroom Notes & School Lab Essays | Curioso",
+    description: "Notes from the classroom on physical science, math intuition, school STEM lab economics, NEP 2020 compliance, and why boxed kits fail students.",
     url: "https://www.curioso.school/blog",
   }
 };

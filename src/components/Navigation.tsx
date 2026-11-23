@@ -18,8 +18,7 @@ export default function Navigation() {
   const anchorLinks = [
     { name: "Why 'Why' Matters", path: '/#problem' },
     { name: 'Programs', path: '/programs' },
-    { name: 'About', path: '/about' },
-    { name: 'FAQ', path: '/faq' }
+    { name: 'About', path: '/about' }
   ];
 
   const isActivePath = (path: string) =>

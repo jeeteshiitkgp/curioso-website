@@ -3,8 +3,8 @@ import { lessons } from '@/data/lessons';
 import { ArrowRight, Clock } from 'lucide-react';
 
 export const metadata = {
-  title: "No-Kit Physics & STEM Classroom Lessons | Curioso",
-  description: "Open-access science and physics demonstrations built with everyday materials. Mapped to NCERT, CBSE, ICSE, IB, and IGCSE classrooms with zero expensive kits.",
+  title: "No-Kit Physics & Science Classroom Lessons",
+  description: "Free hands-on science and physics demos built with everyday desk items. Mapped to NCERT, CBSE, ICSE, IB, and IGCSE classrooms with zero kits.",
   alternates: {
     canonical: "https://www.curioso.school/lessons",
   },

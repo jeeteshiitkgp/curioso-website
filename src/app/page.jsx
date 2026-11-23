@@ -6,8 +6,10 @@ import Courses from '@/components/Courses'
 import FeaturedLesson from '@/components/FeaturedLesson'
 
 export const metadata = {
-  title: "Curiosity-Driven School Program, STEM Curriculum & Makerspace Consultants | Curioso",
-  description: "We partner with progressive CBSE, ICSE, IB, and IGCSE schools in India as makerspace school consultants and STEM school program architects. Zero hardware lock-in, raw-material mechanics, and teacher enablement.",
+  title: {
+    absolute: "School STEM Lab, Math Lab & PBL in India | Curioso",
+  },
+  description: "Hands-on STEM labs, physical math labs, and project-based learning for CBSE, ICSE, IB, and IGCSE schools in India. 80% lower cost, zero plastic kits.",
   alternates: {
     canonical: "https://www.curioso.school",
   },

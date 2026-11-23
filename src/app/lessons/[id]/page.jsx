@@ -16,7 +16,7 @@ export async function generateMetadata({ params }) {
 
   if (!lesson) {
     return {
-      title: 'Lesson Not Found | Curioso',
+      title: 'Lesson Not Found',
       description: 'The requested lesson could not be found.',
     };
   }
@@ -24,7 +24,7 @@ export async function generateMetadata({ params }) {
   const lessonUrl = `https://www.curioso.school/lessons/${lesson.id}`;
 
   return {
-    title: `${lesson.title} | Open-Access Lessons`,
+    title: lesson.title,
     description: lesson.hook,
     alternates: {
       canonical: lessonUrl,

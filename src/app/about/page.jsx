@@ -1,6 +1,6 @@
 export const metadata = {
-  title: "About Jeetesh Gulani | Makerspace & STEM School Program Architects",
-  description: "Founded by IIT Kharagpur Aerospace Engineer Jeetesh Gulani. Over a decade building curiosity-driven school programs, STEM assessments, and no-kit physical curricula for 500+ schools and 200,000+ students.",
+  title: "About Jeetesh Gulani",
+  description: "Founded by IIT Kharagpur Aerospace Engineer Jeetesh Gulani. 10+ years building no-kit science and math curricula across 500+ Indian schools.",
   alternates: {
     canonical: "https://www.curioso.school/about",
   },

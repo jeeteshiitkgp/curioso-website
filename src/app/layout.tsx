@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Navigation from "../components/Navigation";
@@ -9,10 +10,10 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.curioso.school"),
   title: {
-    default: "Curioso | School STEM & Innovation Lab Setup, Curiosity Classroom & Project-Based Learning",
+    default: "School STEM Lab, Math Lab & PBL in India | Curioso",
     template: "%s | Curioso"
   },
-  description: "Proprietary physical curriculum architecture for CBSE, ICSE, IB, and IGCSE schools in India. Replaces expensive robotics labs and kits with open-market STEM and innovation labs, activity-based curiosity classrooms, and project-based learning aligned with NEP 2020.",
+  description: "Hands-on STEM labs, physical math labs, and project-based learning for CBSE, ICSE, IB, and IGCSE schools in India. 80% lower cost, zero plastic kits.",
   keywords: [
     "school stem lab setup India",
     "innovation lab for schools India",
@@ -134,6 +135,12 @@ export default function RootLayout({
             <p className="text-slate-500 text-sm font-medium">
               © {currentYear} Curioso School Foundation. Engineered for Curiosity.
             </p>
+            <Link
+              href="/faq"
+              className="text-slate-400 hover:text-white text-sm font-medium transition-colors"
+            >
+              FAQ
+            </Link>
           </div>
         </footer>
       </body>

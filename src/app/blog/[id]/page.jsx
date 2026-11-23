@@ -16,19 +16,19 @@ export async function generateMetadata({ params }) {
 
   if (!article || (article.date && new Date(article.date) > new Date())) {
     return {
-      title: 'Article Not Found | Curioso',
+      title: 'Article Not Found',
       description: 'The requested article could not be found.',
     };
   }
 
   const cleanDescription = article.content
-    ? article.content.replace(/[#*!\[\]\(\)]/g, '').substring(0, 160).trim() + '...'
+    ? article.content.replace(/[#*!\[\]\(\)]/g, '').substring(0, 150).trim() + '...'
     : 'Classroom notes and essays from Curioso.';
 
   const articleUrl = `https://www.curioso.school/blog/${article.id}`;
 
   return {
-    title: `${article.title} | Curioso`,
+    title: article.title,
     description: cleanDescription,
     alternates: {
       canonical: articleUrl,

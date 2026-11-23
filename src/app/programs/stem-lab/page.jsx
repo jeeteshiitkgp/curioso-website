@@ -2,8 +2,8 @@ import Link from 'next/link';
 import ProgramHeader from '@/components/ProgramHeader';
 
 export const metadata = {
-  title: "School STEM Lab & Innovation Lab Setup in India: Cost, BOM & Curriculum",
-  description: "Set up a school STEM lab, innovation lab, or makerspace in India at 80% lower cost than traditional robotics labs and Atal Tinkering Labs (ATL). Open-market BOM, NEP 2020 curriculum, and teacher training.",
+  title: "School STEM Lab & Innovation Lab Setup India",
+  description: "Set up a school STEM lab or innovation lab in India at 80% lower cost than robotics labs and ATLs. Open-market BOM, 4-zone layout, teacher training.",
   keywords: [
     "innovation lab for schools in india",
     "stem lab setup cost in india",
@@ -17,8 +17,8 @@ export const metadata = {
     canonical: "https://www.curioso.school/programs/stem-lab",
   },
   openGraph: {
-    title: "School STEM Lab & Innovation Lab Setup in India | Curioso",
-    description: "80% lower setup cost than traditional robotics labs. Vendor-neutral open-market BOM, 4-zone makerspace layout, NEP 2020 curriculum, and permanent faculty training.",
+    title: "School STEM Lab & Innovation Lab Setup India | Curioso",
+    description: "Set up a school STEM lab or innovation lab in India at 80% lower cost than robotics labs and ATLs. Open-market BOM, 4-zone layout, teacher training.",
     url: "https://www.curioso.school/programs/stem-lab",
   },
 };

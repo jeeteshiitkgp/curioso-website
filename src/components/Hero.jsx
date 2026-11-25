@@ -1,44 +1,44 @@
-"use client";
-
-import { ArrowRight, Sparkles } from 'lucide-react';
+import Link from 'next/link';
+import { ArrowRight, BookOpen } from 'lucide-react';
 
 export default function Hero() {
   return (
     <div className="relative overflow-hidden bg-space border-b border-indigo-900/50">
-      {/* Main Hero Content */}
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-32">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-12 pb-16 md:pt-16 md:pb-20">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
 
-          <div className="max-w-2xl">
-            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-indigo-900/50 border border-indigo-500/30 text-cyan mb-8 text-sm font-semibold tracking-wide backdrop-blur-sm shadow-inner">
-              <Sparkles size={16} />
-              Curiosity Classroom &amp; School STEM Lab
-            </div>
-            <h1 className="text-5xl md:text-7xl font-extrabold text-white tracking-tight leading-[1.1] mb-8">
+          <div className="lg:col-span-6 max-w-2xl">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-white tracking-tight leading-[1.1] mb-6">
               Active Experiential Learning in <span className="text-transparent bg-clip-text bg-gradient-to-r from-electric to-orange-400 drop-shadow-sm">Schools.</span>
             </h1>
-            <p className="text-lg md:text-xl text-slate-300 mb-10 leading-relaxed max-w-lg font-medium">
-              We help progressive CBSE, ICSE, IB, and IGCSE schools set up low-cost STEM and innovation labs and run hands-on physics and math inside regular periods. No ₹15 Lakh plastic robotics kits, no hardware markups, and no vendor lock-in.
+            <p className="text-base sm:text-lg text-slate-300 mb-8 leading-relaxed max-w-xl font-medium">
+              Low-cost STEM labs and hands-on science and math inside regular school periods. Zero plastic kits. Zero vendor lock-in.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <a href="/programs" className="inline-flex items-center justify-center gap-2 px-8 py-4 border border-transparent rounded-full shadow-[0_0_20px_rgba(249,115,22,0.3)] text-base font-bold text-white bg-electric hover:bg-orange-500 hover:shadow-[0_0_25px_rgba(249,115,22,0.5)] transform hover:-translate-y-0.5 transition-all duration-200">
-                Explore The Programs <ArrowRight size={18} />
-              </a>
+              <Link
+                href="/programs"
+                className="inline-flex items-center justify-center gap-2 px-7 py-4 border border-transparent rounded-full shadow-[0_0_20px_rgba(249,115,22,0.3)] text-base font-bold text-white bg-electric hover:bg-orange-500 hover:shadow-[0_0_25px_rgba(249,115,22,0.5)] transform hover:-translate-y-0.5 transition-all duration-200"
+              >
+                <span>Explore Programs</span>
+                <ArrowRight size={18} />
+              </Link>
+              <Link
+                href="/lessons"
+                className="inline-flex items-center justify-center gap-2 px-7 py-4 border border-indigo-400/35 rounded-full text-base font-bold text-cyan bg-indigo-950/60 hover:bg-indigo-900/80 hover:text-white transition-all duration-200"
+              >
+                <BookOpen size={18} />
+                <span>Try Free Lessons</span>
+              </Link>
             </div>
           </div>
 
-          <div className="relative hidden lg:block perspective-1000">
-            {/* Visual element representing the AI / Student interaction */}
-            <div className="absolute inset-0 bg-gradient-to-tr from-cyan/20 to-electric/20 rounded-3xl blur-[80px] opacity-60 mix-blend-screen"></div>
-            <div className="relative bg-indigo-950/40 border border-indigo-400/20 rounded-[2rem] p-10 aspect-square flex items-center justify-center shadow-2xl backdrop-blur-md transform rotate-y-[-5deg] rotate-x-[5deg] hover:rotate-0 transition-transform duration-700">
+          <div className="lg:col-span-6 relative">
+            <div className="absolute -inset-4 bg-gradient-to-tr from-cyan/20 to-electric/20 rounded-3xl blur-[60px] opacity-60 pointer-events-none"></div>
+            <div className="relative rounded-3xl overflow-hidden border border-indigo-400/25 shadow-2xl bg-slate-900">
               <img
-                src="/curioso_hero_robot.png"
-                alt="Student drawing with AI robot"
-                className="w-full h-full object-contain filter drop-shadow-2xl"
-                onError={(e) => {
-                  e.target.onerror = null;
-                  e.target.src = "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?q=80&w=800&auto=format&fit=crop";
-                }}
+                src="/images/school/cardboard-ev-desk-closeup.jpg"
+                alt="Students testing a scratch-built electric car made from cardboard, copper wire, cells, and a small motor"
+                className="w-full aspect-[4/3] object-cover"
               />
             </div>
           </div>

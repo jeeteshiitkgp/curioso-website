@@ -42,7 +42,7 @@ export async function generateMetadata({ params }) {
       authors: ['Jeetesh Gulani'],
       images: [
         {
-          url: article.image || '/curioso_hero_robot.png',
+          url: article.image || '/images/blog/messy-prototyping-lab.jpg',
           alt: article.title,
         },
       ],
@@ -51,7 +51,7 @@ export async function generateMetadata({ params }) {
       card: 'summary_large_image',
       title: `${article.title} | Curioso`,
       description: cleanDescription,
-      images: [article.image || '/curioso_hero_robot.png'],
+      images: [article.image || '/images/blog/messy-prototyping-lab.jpg'],
     },
   };
 }
@@ -73,7 +73,7 @@ export default async function ArticleView({ params }) {
     '@type': 'Article',
     'headline': article.title,
     'description': cleanDescription,
-    'image': article.image ? [article.image] : ['https://www.curioso.school/curioso_hero_robot.png'],
+    'image': article.image ? [article.image] : ['https://www.curioso.school/images/blog/messy-prototyping-lab.jpg'],
     'datePublished': article.date,
     'author': {
       '@type': 'Person',
@@ -85,7 +85,7 @@ export default async function ArticleView({ params }) {
       'name': 'Curioso School Foundation',
       'logo': {
         '@type': 'ImageObject',
-        'url': 'https://www.curioso.school/curioso_hero_robot.png',
+        'url': 'https://www.curioso.school/favicon.svg',
       },
     },
     'mainEntityOfPage': {

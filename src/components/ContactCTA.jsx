@@ -57,14 +57,11 @@ export default function ContactCTA() {
         
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-10 md:mb-14">
-          <span className="text-[10px] sm:text-xs font-bold uppercase tracking-widest text-electric bg-indigo-950/80 border border-electric/30 px-3.5 py-1 rounded-full mb-4 inline-block">
-            School Partnerships
-          </span>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white tracking-tight leading-tight mb-4">
             Bring Real Engineering &amp; Inquiry to <span className="text-transparent bg-clip-text bg-gradient-to-r from-electric to-orange-400">Your School.</span>
           </h2>
-          <p className="text-xs sm:text-sm md:text-base text-slate-300 font-medium leading-relaxed">
-            Pick a 30-minute slot on my calendar for a live lab and curriculum walkthrough, or drop a message below.
+          <p className="text-sm sm:text-base text-slate-300 font-medium leading-relaxed">
+            Book a 30-minute walkthrough or leave a quick note.
           </p>
 
           {/* Mode Switcher Tabs */}
@@ -78,7 +75,7 @@ export default function ContactCTA() {
               }`}
             >
               <Calendar className="w-4 h-4" />
-              <span>Schedule Call (Instant)</span>
+              <span>Book a Call</span>
             </button>
             <button
               onClick={() => setActiveTab('form')}
@@ -89,7 +86,7 @@ export default function ContactCTA() {
               }`}
             >
               <Mail className="w-4 h-4" />
-              <span>Send Message</span>
+              <span>Send a Message</span>
             </button>
           </div>
         </div>
@@ -100,9 +97,9 @@ export default function ContactCTA() {
           {activeTab === 'calendar' ? (
             /* Tab 1: Instant Calendly Booking Embed */
             <div className="w-full flex flex-col items-center">
-              <div className="w-full flex justify-between items-center px-4 mb-4 text-xs text-slate-400">
+              <div className="w-full flex justify-between items-center px-4 mb-4 text-xs sm:text-sm text-slate-400">
                 <span className="font-semibold text-slate-300">
-                  Select a convenient 30-minute slot for an institutional walkthrough
+                  Select a convenient slot for a school walkthrough
                 </span>
                 <a
                   href="https://calendly.com/jeetesh-curioso/30min"
@@ -120,7 +117,7 @@ export default function ContactCTA() {
                   width="100%"
                   height="680"
                   frameBorder="0"
-                  title="Schedule a 30-Min Institutional Consultation"
+                  title="Schedule a School Walkthrough"
                   className="w-full h-[680px]"
                 ></iframe>
               </div>
@@ -135,28 +132,28 @@ export default function ContactCTA() {
                   </div>
                   <h3 className="text-2xl font-extrabold text-white mb-3">Inquiry Received</h3>
                   <p className="text-sm sm:text-base text-slate-300 mb-8 leading-relaxed">
-                    Thank you for reaching out. Your inquiry has been routed directly to Jeetesh Gulani. We will review your school requirements and respond within 24 hours.
+                    Thank you for reaching out. Your note has been routed directly to Jeetesh Gulani. We will review your school details and reply within 24 hours.
                   </p>
                   <button
                     onClick={() => {
                       setSubmitted(false);
                       setActiveTab('calendar');
                     }}
-                    className="inline-flex items-center gap-2 bg-electric hover:bg-orange-600 text-white font-bold text-xs sm:text-sm px-6 py-3.5 rounded-full transition-all shadow-lg"
+                    className="inline-flex items-center gap-2 bg-electric hover:bg-orange-600 text-white font-bold text-sm px-6 py-3.5 rounded-full transition-all shadow-lg"
                   >
                     <Calendar className="w-4 h-4" />
-                    Want to lock a slot now? Schedule Call
+                    Want to lock a slot now? Book a Call
                   </button>
                 </div>
               ) : (
                 <div className="bg-white text-space rounded-3xl p-6 sm:p-10 shadow-xl border border-slate-100">
-                  <h3 className="text-2xl font-extrabold text-space mb-2">Send an Institutional Inquiry</h3>
-                  <p className="text-xs sm:text-sm text-slate-500 mb-8 font-medium">
-                    Have a quick question about curriculum licensing, BOM procurement, or board compliance? Leave a note.
+                  <h3 className="text-2xl font-extrabold text-space mb-2">Send a School Inquiry</h3>
+                  <p className="text-sm text-slate-600 mb-8 font-medium">
+                    Want sample lesson guides, a local lab supply list, or quick answers on costs and CBSE/ICSE fit? Leave a note.
                   </p>
 
                   {errorMessage && (
-                    <div className="mb-6 p-4 bg-red-50 border border-red-200 text-red-700 text-xs sm:text-sm rounded-xl font-medium">
+                    <div className="mb-6 p-4 bg-red-50 border border-red-200 text-red-700 text-sm rounded-xl font-medium">
                       {errorMessage}
                     </div>
                   )}
@@ -173,7 +170,7 @@ export default function ContactCTA() {
                           required
                           value={formState.firstName}
                           onChange={handleInputChange}
-                          className="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 text-sm font-medium focus:outline-none focus:border-electric focus:ring-2 focus:ring-electric/20 transition-all text-space"
+                          className="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 text-base font-medium focus:outline-none focus:border-electric focus:ring-2 focus:ring-electric/20 transition-all text-space"
                           placeholder="e.g. Dr. Priya"
                         />
                       </div>
@@ -186,7 +183,7 @@ export default function ContactCTA() {
                           name="lastName"
                           value={formState.lastName}
                           onChange={handleInputChange}
-                          className="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 text-sm font-medium focus:outline-none focus:border-electric focus:ring-2 focus:ring-electric/20 transition-all text-space"
+                          className="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 text-base font-medium focus:outline-none focus:border-electric focus:ring-2 focus:ring-electric/20 transition-all text-space"
                           placeholder="e.g. Sharma"
                         />
                       </div>
@@ -202,7 +199,7 @@ export default function ContactCTA() {
                         required
                         value={formState.email}
                         onChange={handleInputChange}
-                        className="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 text-sm font-medium focus:outline-none focus:border-electric focus:ring-2 focus:ring-electric/20 transition-all text-space"
+                        className="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 text-base font-medium focus:outline-none focus:border-electric focus:ring-2 focus:ring-electric/20 transition-all text-space"
                         placeholder="e.g. principal@school.edu.in"
                       />
                     </div>
@@ -216,8 +213,8 @@ export default function ContactCTA() {
                         rows={4}
                         value={formState.message}
                         onChange={handleInputChange}
-                        className="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 text-sm font-medium focus:outline-none focus:border-electric focus:ring-2 focus:ring-electric/20 transition-all resize-none text-space"
-                        placeholder="Tell us about your grade levels, student strength, or NEP 2020 science lab objectives..."
+                        className="w-full bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 text-base font-medium focus:outline-none focus:border-electric focus:ring-2 focus:ring-electric/20 transition-all resize-none text-space"
+                        placeholder="Tell us about your grade levels, student strength, or what you want to run..."
                       ></textarea>
                     </div>
 

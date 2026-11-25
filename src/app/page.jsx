@@ -1,9 +1,11 @@
 import Hero from '@/components/Hero'
+import TrustStrip from '@/components/TrustStrip'
 import ProblemStatement from '@/components/ProblemStatement'
-import FounderStory from '@/components/FounderStory'
 import ExperienceTeaser from '@/components/ExperienceTeaser'
-import Courses from '@/components/Courses'
+import SchoolProofSection from '@/components/SchoolProofSection'
 import FeaturedLesson from '@/components/FeaturedLesson'
+import FounderStory from '@/components/FounderStory'
+import Courses from '@/components/Courses'
 
 export const metadata = {
   title: {
@@ -19,8 +21,10 @@ export default function Home() {
   return (
     <div className="flex flex-col">
       <Hero />
+      <TrustStrip />
       <ProblemStatement />
       <ExperienceTeaser />
+      <SchoolProofSection />
       <FeaturedLesson />
       <FounderStory />
       <Courses />

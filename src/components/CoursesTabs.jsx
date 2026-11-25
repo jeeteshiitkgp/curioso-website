@@ -7,58 +7,58 @@ export default function CoursesTabs() {
 
   const courses = [
     {
-      title: "Curiosity-Driven School Program (Daily Socratic Hooks)",
+      title: "Curiosity-Driven School Program",
       shortName: "Curiosity Program",
-      hook: "What happens when every textbook chapter starts with a physical anomaly that breaks student intuition?",
-      desc: "Our curiosity-driven school program weaves 45-minute physical inquiry hooks directly into your regular CBSE, ICSE, IB, or IGCSE science and math timetable. Before touching a formula, students confront counter-intuitive physical phenomena using everyday raw materials.",
-      example: "From the Tilted Palm friction test and the Submerged Breathing Leaf to the Tiger's Dichromatic Blindspot and Accordion Paper Trusses, students link physics, biology, and geometry without subject silos.",
+      hook: "What happens when every textbook chapter starts with a physical puzzle that breaks student guesses?",
+      desc: "Our curiosity-driven school program weaves 45-minute hands-on science and math activities (including a physical math lab) directly into your regular CBSE, ICSE, IB, or IGCSE timetable using everyday materials.",
+      example: "From the Tilted Palm friction test and the Submerged Breathing Leaf to the Tiger's Blindspot and Accordion Paper Bridges, students connect physics, biology, and geometry without subject walls.",
       gains: [
         "Connects textbook equations to lived physical reality",
         "Eliminates rote memorization across Physics, Biology, and Math",
-        "Builds intuition through counter-intuitive observations"
+        "Builds real intuition through surprising experiments"
       ],
       benefits: [
         "Integrates into existing 45-minute school periods",
         "Maps directly to CBSE, ICSE, IB, and IGCSE concepts",
-        "Zero sterile plastic kits or proprietary lab lock-in"
+        "Zero plastic kits or vendor lock-in"
       ],
       accent: "text-indigo-600",
       bgBadge: "bg-indigo-100 text-indigo-900"
     },
     {
-      title: "Multi-Week STEM School Program (Flagship Engineering Arcs)",
+      title: "Multi-Week STEM School Program (Project Tracks)",
       shortName: "STEM Engineering",
       hook: "Can middle-schoolers build real working machines without pre-molded plastic robotics kits?",
-      desc: "In this 12 to 30 session (20 to 60 hour) deep STEM school program, students build functional mechanical and electrical systems from scratch using raw domestic materials: copper wire, syringes, sheet metal, scrap wood, and DC motors.",
-      example: "Students design, calibrate, fail, and rebuild across five flagship engineering arcs: Bare-Chassis EV Racers, Solar-Tracked Evaporative Coolers, 3-Axis Hydraulic Cranes, Dual-Motor Tank-Drive Rovers, and Multi-Stage Water Purifiers.",
+      desc: "In this 12 to 30 session (20 to 60 hour) project-based program, students build working mechanical and electrical machines from scratch using everyday materials: copper wire, syringes, sheet metal, scrap wood, and DC motors.",
+      example: "Students design, test, fail, and rebuild across five working machines: Scratch-Built Electric Cars, Solar Air Coolers, Syringe Hydraulic Cranes, Two-Motor Steerable Rovers, and Layered Water Filters.",
       gains: [
-        "Master circuits, gearing, hydraulics, and structural tolerances",
-        "Debug real mechanical failures without instruction manuals",
-        "Build 20 to 60 hours of authentic engineering prototypes"
+        "Master circuits, gears, water pressure, and frame strength",
+        "Fix real build failures without instruction manuals",
+        "Build 20 to 60 hours of authentic engineering projects"
       ],
       benefits: [
-        "Replaces high-capex kit assembly with real engineering",
-        "Open-market Bill of Materials cuts recurring costs by over 80%",
-        "Creates tangible student portfolios for admissions and showcases"
+        "Replaces high-cost kit assembly with real building",
+        "Everyday supplies cut yearly costs by over 80%",
+        "Creates tangible student work for admissions and showcases"
       ],
       accent: "text-electric",
       bgBadge: "bg-orange-100 text-electric"
     },
     {
-      title: "Makerspace School Consultants & Lab Advisory",
-      shortName: "Makerspace Advisory",
-      hook: "Why spend 15 to 25 lakhs on a glass-cupboard robotics lab when an open-market makerspace costs 80% less?",
-      desc: "As independent makerspace school consultants, we help school trustees and directors set up or overhaul physical STEM labs without vendor hardware lock-in. We do not sell kits or mark up electronics.",
-      example: "We provide a vendor-neutral open-market Bill of Materials (BOM) procured locally at wholesale rates, assist with facilitator hiring and induction, and run weekly Socratic lesson-prep syncs plus monthly on-campus faculty workshops.",
+      title: "School STEM & Innovation Lab Setup",
+      shortName: "Lab Advisory",
+      hook: "Why spend ₹15 to 25 lakhs on a glass-cupboard robotics lab when a low-cost lab costs 80% less?",
+      desc: "We help school trustees and directors set up or refresh physical STEM labs without vendor hardware lock-in. We do not sell kits or mark up electronics.",
+      example: "We provide a clear shopping list of local everyday supplies bought at wholesale rates, help hire or train your existing teachers, and run weekly prep check-ins plus monthly on-campus teacher workshops.",
       gains: [
-        "Safe, raw-material workshops designed for independent iteration",
-        "Guided by trained school faculty instead of rotating outside staff",
+        "Safe, hands-on workshops designed for independent building",
+        "Guided by trained school teachers instead of rotating outside staff",
         "Continuous progression from Grade 1 to Grade 10"
       ],
       benefits: [
-        "Vendor-neutral Bill of Materials procured at open-market rates",
-        "Facilitator hiring, induction, and weekly Socratic prep syncs",
-        "Monthly on-campus teacher workshops and lab audits"
+        "Everyday local supplies bought at wholesale rates",
+        "Teacher hiring help and weekly lesson-prep check-ins",
+        "Monthly on-campus teacher workshops and lab support"
       ],
       accent: "text-cyan",
       bgBadge: "bg-cyan-100 text-cyan-800"

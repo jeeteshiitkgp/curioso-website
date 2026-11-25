@@ -7,22 +7,20 @@ import { Menu, X } from 'lucide-react';
 
 export default function Navigation() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const pathname = usePathname();
+  const pathname = usePathname() || '/';
 
-  const navLinks = [
-    { name: 'Lessons', path: '/lessons' },
-    { name: 'Experience', path: '/experience' },
-    { name: 'Blog', path: '/blog' }
-  ];
-
-  const anchorLinks = [
-    { name: "Why 'Why' Matters", path: '/#problem' },
+  const navItems = [
     { name: 'Programs', path: '/programs' },
-    { name: 'About', path: '/about' }
+    { name: 'Lessons', path: '/lessons' },
+    { name: 'How It Works', path: '/experience' },
+    { name: 'Blog', path: '/blog' },
+    { name: 'About', path: '/about' },
   ];
 
   const isActivePath = (path: string) =>
-    path === '/programs' ? pathname.startsWith('/programs') : pathname === path;
+    path === '/programs' || path === '/lessons' || path === '/blog'
+      ? pathname.startsWith(path)
+      : pathname === path;
 
   return (
     <nav className="sticky top-0 z-50 bg-space border-b border-indigo-900/50 shadow-sm backdrop-blur-md bg-opacity-98">
@@ -45,39 +43,16 @@ export default function Navigation() {
               </svg>
               <span>OSO</span>
             </Link>
-            <span className="text-[9px] font-bold uppercase tracking-[0.15em] text-cyan mt-1">Engineered for Curiosity</span>
+            <span className="text-[10px] font-bold uppercase tracking-[0.15em] text-cyan mt-1">Engineered for Curiosity</span>
           </div>
 
           {/* Desktop Nav */}
-          <div className="hidden lg:flex ml-6 space-x-3 xl:space-x-6 items-center">
-            {anchorLinks.map((link) => (
-              link.path.startsWith('/#') ? (
-                <a
-                  key={link.name}
-                  href={link.path}
-                  className="text-slate-300 hover:text-white transition-colors px-2 py-2 text-xs xl:text-sm font-semibold tracking-wide whitespace-nowrap"
-                >
-                  {link.name}
-                </a>
-              ) : (
-                <Link
-                  key={link.name}
-                  href={link.path}
-                  className={`${isActivePath(link.path)
-                    ? 'text-electric border-b-2 border-electric'
-                    : 'text-slate-300 hover:text-ivory hover:border-b-2 border-transparent transition-all duration-300'
-                    } px-2 py-2 text-xs xl:text-sm font-semibold tracking-wide whitespace-nowrap`}
-                >
-                  {link.name}
-                </Link>
-              )
-            ))}
-
-            {navLinks.map((link) => (
+          <div className="hidden lg:flex ml-6 space-x-4 xl:space-x-7 items-center">
+            {navItems.map((link) => (
               <Link
                 key={link.name}
                 href={link.path}
-                className={`${pathname === link.path
+                className={`${isActivePath(link.path)
                   ? 'text-electric border-b-2 border-electric'
                   : 'text-slate-300 hover:text-ivory hover:border-b-2 border-transparent transition-all duration-300'
                   } px-2 py-2 text-xs xl:text-sm font-semibold tracking-wide whitespace-nowrap`}
@@ -85,19 +60,20 @@ export default function Navigation() {
                 {link.name}
               </Link>
             ))}
-            <a href="#contact" className="ml-2 inline-flex items-center justify-center px-4 xl:px-6 py-2.5 border border-transparent rounded-full shadow-lg text-xs xl:text-sm font-bold text-space bg-cyan hover:bg-teal-400 hover:scale-105 transition-all duration-200 whitespace-nowrap">
+            <a href="#contact" className="ml-2 inline-flex items-center justify-center px-5 xl:px-6 py-2.5 border border-transparent rounded-full shadow-lg text-xs xl:text-sm font-bold text-space bg-cyan hover:bg-teal-400 hover:scale-105 transition-all duration-200 whitespace-nowrap">
               Partner With Us
             </a>
           </div>
 
           {/* Mobile menu and CTA wrapper */}
           <div className="lg:hidden flex items-center gap-3">
-            <a href="#contact" className="inline-flex items-center justify-center px-3 py-1.5 border border-transparent rounded-full shadow-lg text-[10px] font-bold text-space bg-cyan hover:bg-teal-400 active:scale-95 transition-all duration-200 whitespace-nowrap">
+            <a href="#contact" className="inline-flex items-center justify-center px-3.5 py-2 border border-transparent rounded-full shadow-lg text-xs font-bold text-space bg-cyan hover:bg-teal-400 active:scale-95 transition-all duration-200 whitespace-nowrap">
               Partner
             </a>
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
               className="text-slate-300 hover:text-white p-2"
+              aria-label="Toggle Menu"
             >
               {isMenuOpen ? <X size={28} /> : <Menu size={28} />}
             </button>
@@ -108,44 +84,29 @@ export default function Navigation() {
       {/* Mobile Nav */}
       {isMenuOpen && (
         <div className="lg:hidden bg-space border-b border-indigo-800">
-          <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-            {anchorLinks.map((link) => (
-              link.path.startsWith('/#') ? (
-                <a
-                  key={link.name}
-                  href={link.path}
-                  className="text-slate-300 hover:bg-indigo-800 hover:text-white block px-3 py-2 rounded-md text-base font-semibold"
-                  onClick={() => setIsMenuOpen(false)}
-                >
-                  {link.name}
-                </a>
-              ) : (
-                <Link
-                  key={link.name}
-                  href={link.path}
-                  className={`${isActivePath(link.path)
-                    ? 'bg-indigo-900/50 text-electric'
-                    : 'text-slate-300 hover:bg-indigo-800 hover:text-white'
-                    } block px-3 py-2 rounded-md text-base font-semibold`}
-                  onClick={() => setIsMenuOpen(false)}
-                >
-                  {link.name}
-                </Link>
-              )
-            ))}
-            {navLinks.map((link) => (
+          <div className="px-3 pt-2 pb-4 space-y-1 sm:px-4">
+            {navItems.map((link) => (
               <Link
                 key={link.name}
                 href={link.path}
-                className={`${pathname === link.path
+                className={`${isActivePath(link.path)
                   ? 'bg-indigo-900/50 text-electric'
                   : 'text-slate-300 hover:bg-indigo-800 hover:text-white'
-                  } block px-3 py-2 rounded-md text-base font-semibold uppercase`}
+                  } block px-3 py-2.5 rounded-md text-base font-semibold`}
                 onClick={() => setIsMenuOpen(false)}
               >
                 {link.name}
               </Link>
             ))}
+            <div className="pt-2 border-t border-indigo-900/60">
+              <a
+                href="#contact"
+                className="block w-full text-center px-4 py-3 rounded-xl bg-cyan text-space font-bold text-base"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Partner With Us
+              </a>
+            </div>
           </div>
         </div>
       )}

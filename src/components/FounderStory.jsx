@@ -1,30 +1,25 @@
-"use client";
 import Link from 'next/link';
 
 export default function FounderStory() {
   return (
-    <section id="founder" className="py-24 bg-space text-ivory relative overflow-hidden">
+    <section id="founder" className="py-16 md:py-24 bg-space text-ivory relative overflow-hidden">
       <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-electric/10 rounded-full blur-[100px] mix-blend-screen pointer-events-none"></div>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="grid lg:grid-cols-2 gap-20 items-center">
+        <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
 
           <div className="order-2 lg:order-1">
-            <h2 className="text-sm font-bold tracking-[0.2em] text-cyan uppercase mb-4">From the Founder</h2>
-            <h3 className="text-4xl md:text-5xl font-extrabold text-white mb-8 tracking-tight leading-tight">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white mb-6 tracking-tight leading-tight">
               Memorizing definitions passes exams. It does not build engineers.
-            </h3>
-            <p className="text-lg text-slate-300 mb-6 leading-relaxed font-medium">
-              Walk into any 4th-grade class and ask for the strongest shape, and forty hands shout "Triangle." Four years later, those same kids prove the SSS triangle congruence theorem in 8th-grade geometry. Yet hand them a flat sheet of paper and ask them to hold up twenty coins across two coffee mugs, and they freeze. Nobody ever showed them that both lessons describe the exact same physical reality.
+            </h2>
+            <p className="text-base sm:text-lg text-slate-300 mb-8 leading-relaxed font-medium">
+              4th graders shout "Triangle" when asked for the strongest shape, and prove triangle congruence in 8th grade. Hand them a sheet of paper to hold twenty coins across two mugs, and they freeze because nobody connected the chapter to real materials.
             </p>
-            <p className="text-lg text-slate-300 mb-10 leading-relaxed font-medium">
-              After graduating in Aerospace Engineering from IIT Kharagpur, I spent the last decade designing science and math curricula and assessments for 500+ schools and 200,000+ students. I built Curioso because pricey lab kits only teach kids how to follow a manual. Real intuition comes from working through the friction of raw materials.
-            </p>
-            <div className="flex items-center gap-5 bg-indigo-950/40 p-5 rounded-2xl border border-indigo-500/20 backdrop-blur-sm max-w-sm">
+            <div className="flex items-center gap-5 bg-indigo-950/50 p-5 rounded-2xl border border-indigo-500/25 backdrop-blur-sm max-w-sm">
               <div className="w-16 h-16 rounded-full bg-indigo-900 border-2 border-indigo-400/50 overflow-hidden shadow-[0_0_15px_rgba(6,182,212,0.3)] shrink-0">
-                <img src="/founder.jpg" alt="Jeetesh Gulani" className="w-full h-full object-cover" onError={(e) => { e.target.onerror = null; e.target.src = "https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80&w=200&h=200"; }} />
+                <img src="/founder.jpg" alt="Jeetesh Gulani" className="w-full h-full object-cover" />
               </div>
               <div>
-                <h4 className="font-bold text-white text-lg">Jeetesh Gulani</h4>
+                <h3 className="font-bold text-white text-lg">Jeetesh Gulani</h3>
                 <p className="text-cyan text-sm font-medium">Founder, Curioso • IIT Kharagpur</p>
               </div>
             </div>
@@ -38,9 +33,15 @@ export default function FounderStory() {
             </div>
           </div>
 
-          <div className="order-1 lg:order-2 relative group perspective">
-            <div className="absolute inset-0 bg-gradient-to-l from-cyan to-indigo-500 rounded-[2.5rem] transform -rotate-3 scale-100 opacity-20 filter blur-2xl group-hover:opacity-40 transition-opacity duration-700"></div>
-            <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&q=80&w=800" alt="Learning environment" className="relative rounded-[2rem] shadow-2xl border border-indigo-800/50 transform group-hover:scale-[1.02] transition-transform duration-700" />
+          <div className="order-1 lg:order-2 relative group">
+            <div className="absolute inset-0 bg-gradient-to-l from-cyan to-indigo-500 rounded-[2rem] opacity-20 filter blur-2xl group-hover:opacity-35 transition-opacity duration-700 pointer-events-none"></div>
+            <div className="relative rounded-[2rem] overflow-hidden shadow-2xl border border-indigo-500/30 bg-indigo-950/60">
+              <img
+                src="/images/lessons/corrugated-paper-bridge.jpg"
+                alt="Accordion-folded paper holding coins across two books"
+                className="w-full aspect-[4/3] object-cover group-hover:scale-[1.02] transition-transform duration-700"
+              />
+            </div>
           </div>
 
         </div>

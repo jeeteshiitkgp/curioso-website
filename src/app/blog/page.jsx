@@ -67,7 +67,7 @@ export default function Blog() {
                     </h2>
 
                     <p className="text-slate-600 text-sm sm:text-base leading-relaxed line-clamp-3 mb-6 flex-grow">
-                      {article.content ? article.content.replace(/[#*!\[\]\(\)]/g, '').substring(0, 160) + '...' : ''}
+                      {article.content ? article.content.replace(/\[(?:INTERACTIVE|YOUTUBE_EMBED):[^\]]+\]/g, '').replace(/[#*!\[\]\(\)]/g, '').substring(0, 160) + '...' : ''}
                     </p>
 
                     <div className="flex items-center text-sm font-bold text-electric group-hover:translate-x-1 transition-transform">

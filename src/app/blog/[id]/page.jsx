@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { articles } from '@/data/articles';
 import { notFound } from 'next/navigation';
+import InteractiveExplainer from '@/components/explainers/InteractiveExplainer';
 
 export async function generateStaticParams() {
   return articles
@@ -22,7 +23,7 @@ export async function generateMetadata({ params }) {
   }
 
   const cleanDescription = article.content
-    ? article.content.replace(/[#*!\[\]\(\)]/g, '').substring(0, 150).trim() + '...'
+    ? article.content.replace(/\[(?:INTERACTIVE|YOUTUBE_EMBED):[^\]]+\]/g, '').replace(/[#*!\[\]\(\)]/g, '').substring(0, 150).trim() + '...'
     : 'Classroom notes and essays from Curioso.';
 
   const articleUrl = `https://www.curioso.school/blog/${article.id}`;
@@ -65,7 +66,7 @@ export default async function ArticleView({ params }) {
   }
 
   const cleanDescription = article.content
-    ? article.content.replace(/[#*!\[\]\(\)]/g, '').substring(0, 160).trim() + '...'
+    ? article.content.replace(/\[(?:INTERACTIVE|YOUTUBE_EMBED):[^\]]+\]/g, '').replace(/[#*!\[\]\(\)]/g, '').substring(0, 160).trim() + '...'
     : '';
 
   const articleSchema = {
@@ -95,6 +96,16 @@ export default async function ArticleView({ params }) {
   };
 
   const parseContent = (content) => {
+    const formatInline = (text) =>
+      text
+        .replace(/\*\*(.*?)\*\*/g, '<strong class="font-bold text-space">$1</strong>')
+        .replace(/\*(.*?)\*/g, '<em class="italic">$1</em>')
+        .replace(/`([^`]+)`/g, '<code class="bg-slate-100 px-1.5 py-0.5 rounded text-sm text-space font-mono">$1</code>')
+        .replace(/\[(.*?)\]\((.*?)\)/g, (_, label, href) => {
+          const isExternal = /^https?:\/\//i.test(href);
+          return `<a href="${href}"${isExternal ? ' target="_blank" rel="noopener noreferrer"' : ''} class="text-electric hover:underline font-semibold">${label}</a>`;
+        });
+
     return content.split('\n\n').map((paragraph, index) => {
       // Image support
       if (paragraph.startsWith('![')) {
@@ -130,22 +141,20 @@ export default async function ArticleView({ params }) {
 
       // List Items
       if (paragraph.startsWith('- ') || paragraph.startsWith('* ')) {
-        const formatInline = (text) =>
-          text
-            .replace(/^[-*]\s+/, '')
-            .replace(/\*\*(.*?)\*\*/g, '<strong class="font-bold text-space">$1</strong>')
-            .replace(/\*(.*?)\*/g, '<em class="italic">$1</em>')
-            .replace(/`([^`]+)`/g, '<code class="bg-slate-100 px-1.5 py-0.5 rounded text-sm text-space font-mono">$1</code>')
-            .replace(/\[(.*?)\]\((.*?)\)/g, '<a href="$2" class="text-electric hover:underline font-semibold">$1</a>');
-
         const lis = paragraph.split('\n').map((li, i) => (
-          <li key={i} className="mb-2" dangerouslySetInnerHTML={{ __html: formatInline(li) }} />
+          <li key={i} className="mb-2" dangerouslySetInnerHTML={{ __html: formatInline(li.replace(/^[-*]\s+/, '')) }} />
         ));
         return (
           <ul key={index} className="list-disc pl-6 mb-6 text-base sm:text-lg text-slate-700 leading-relaxed space-y-2">
             {lis}
           </ul>
         );
+      }
+
+      // Interactive Coded Explainer
+      if (paragraph.startsWith('[INTERACTIVE:')) {
+        const name = paragraph.replace('[INTERACTIVE:', '').replace(']', '').trim();
+        return <InteractiveExplainer key={index} name={name} />;
       }
 
       // YouTube Embed
@@ -167,18 +176,11 @@ export default async function ArticleView({ params }) {
         );
       }
 
-      // Inline formatting
-      const htmlContent = paragraph
-        .replace(/\*\*(.*?)\*\*/g, '<strong class="font-bold text-space">$1</strong>')
-        .replace(/\*(.*?)\*/g, '<em class="italic">$1</em>')
-        .replace(/`([^`]+)`/g, '<code class="bg-slate-100 px-1.5 py-0.5 rounded text-sm text-space font-mono">$1</code>')
-        .replace(/\[(.*?)\]\((.*?)\)/g, '<a href="$2" class="text-electric hover:underline font-semibold">$1</a>');
-
       return (
         <p
           key={index}
           className="mb-6 text-base sm:text-lg text-slate-700 leading-relaxed"
-          dangerouslySetInnerHTML={{ __html: htmlContent }}
+          dangerouslySetInnerHTML={{ __html: formatInline(paragraph) }}
         />
       );
     });

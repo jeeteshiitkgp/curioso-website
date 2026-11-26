@@ -5,8 +5,8 @@ export const programsList = [
     title: "Curiosity Classroom",
     image: "/images/lessons/corrugated-paper-bridge.jpg",
     imageAlt: "Folded A4 paper bridge supporting weights across two books",
-    headline: "Hands-On Science & Math (Including a Physical Math Lab) in Regular Periods.",
-    hook: "Why lock ₹3 lakhs of plastic shapes in a cupboard when everyday paper, rice, and coins teach science and math on student desks?",
+    headline: "Hands-On Science & Math (With a Physical Math Lab) in Regular Periods.",
+    hook: "Use paper, rice, coins, and leaves on classroom desks instead of locking ₹3 lakhs of plastic shapes in a cupboard.",
     tags: ["Science & Math", "Physical Math Lab", "45-Min Periods"],
   },
   {
@@ -16,8 +16,8 @@ export const programsList = [
     image: "/images/school/cardboard-ev-desk-closeup.jpg",
     imageAlt: "Students building a scratch-built electric car with cardboard and small motors",
     headline: "Set Up a School STEM & Innovation Lab at 80% Lower Cost.",
-    hook: "Why spend ₹15 to 25 lakhs on a glass-cupboard robotics room when everyday local supplies and trained teachers cost 80% less?",
-    tags: ["80% Lower Setup Cost", "4-Zone Lab Layout", "Local Supplies"],
+    hook: "Skip ₹15 to 25 lakh robotics packages. Buy everyday tools locally and train your own science and math teachers.",
+    tags: ["₹1.5L to ₹4L Local Setup", "4-Zone Lab Layout", "Zero Kit Lock-In"],
   },
   {
     slug: "project-based-learning",
@@ -26,7 +26,7 @@ export const programsList = [
     image: "/images/school/sticks-hands-landscape.jpg",
     imageAlt: "Students constructing frames with wooden sticks and rubber bands",
     headline: "12 to 30 Session Engineering Builds From Everyday Materials.",
-    hook: "Students build real working machines from cardboard, wood, syringes, and small motors instead of snapping plastic kits together.",
-    tags: ["20 to 60 Hour Tracks", "Zero Plastic Kits", "Working Builds"],
+    hook: "Students build five working machines from wood, cardboard, syringes, and small motors instead of snapping plastic kits.",
+    tags: ["Grades 6 to 10", "5 Working Builds", "Zero Plastic Kits"],
   },
 ];

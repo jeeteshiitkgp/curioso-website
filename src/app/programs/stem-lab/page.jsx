@@ -24,26 +24,41 @@ export const metadata = {
 };
 
 export default function StemLabPage() {
+  const summaryMetrics = [
+    {
+      value: "₹1.5L to ₹4L Local Setup",
+      detail: "80%+ lower cost than ₹10L to ₹25L robotics packages",
+    },
+    {
+      value: "600 to 1,500 Sq. Ft.",
+      detail: "4 clear zones for 20 to 30 students per batch",
+    },
+    {
+      value: "Your Own Teachers",
+      detail: "Weekly prep check-ins & monthly campus workshops",
+    },
+  ];
+
   const costComparison = [
     {
       model: "Standard Kit Robotics Lab / ATL Model",
-      setupCost: "₹7 Lakhs to ₹15 Lakhs (NITI Aayog ATL benchmark: ₹10L to ₹20L grant)",
-      recurring: "10% to 15% annually on replacement kits and software renewals",
-      ownership: "Tied to one vendor; runs on visiting outside trainers",
+      setupCost: "₹7 Lakhs to ₹15 Lakhs (NITI Aayog ATL: ₹10L to ₹20L grant)",
+      recurring: "10% to 15% yearly on replacement kits & software",
+      ownership: "Vendor lock-in; relies on outside trainers",
       highlight: false,
     },
     {
       model: "Advanced Tech Lab (VR, Drones, 3D Printers)",
       setupCost: "₹15 Lakhs to ₹25 Lakhs+",
-      recurring: "Yearly software licenses, filaments, and repair contracts",
-      ownership: "High chance the room stays locked once parts break",
+      recurring: "Yearly software fees, filaments, and repair contracts",
+      ownership: "High risk the room stays locked when parts break",
       highlight: false,
     },
     {
       model: "Curioso Low-Cost STEM & Innovation Lab",
-      setupCost: "₹1.5 Lakhs to ₹4 Lakhs in local tools & materials (80%+ lower total cost)",
-      recurring: "Everyday local supplies (copper wire, syringes, wood, small DC motors)",
-      ownership: "Zero hardware markups; your own science and math teachers run it",
+      setupCost: "₹1.5 Lakhs to ₹4 Lakhs in local tools (80%+ lower total cost)",
+      recurring: "Everyday local supplies (wire, syringes, wood, DC motors)",
+      ownership: "Zero kit markups; your own science and math teachers run it",
       highlight: true,
     },
   ];
@@ -52,22 +67,22 @@ export default function StemLabPage() {
     {
       zone: "Zone 01",
       name: "Cutting & Building Benches",
-      specs: "Sturdy worktables, hand saws, scrap wood, thin metal sheets, syringes, cardboard, and fasteners for building from scratch.",
+      specs: "Worktables, hand saws, scrap wood, thin metal, syringes, cardboard, and fasteners.",
     },
     {
       zone: "Zone 02",
       name: "Motors, Wiring & Circuits",
-      specs: "Simple DC motors, switches, copper wire, 9V and rechargeable batteries, basic meters, and supervised soldering tools.",
+      specs: "Small DC motors, switches, copper wire, batteries, basic meters, and soldering irons.",
     },
     {
       zone: "Zone 03",
       name: "Testing & Measurement Area",
-      specs: "Sloped ramps, weight-testing frames, water tubs for pressure experiments, measuring tapes, and stopwatches.",
+      specs: "Sloped ramps, weight frames, water tubs, measuring tapes, and stopwatches.",
     },
     {
       zone: "Zone 04",
       name: "Student Work & Shelf Display",
-      specs: "Open shelves showing working student builds, early broken versions, and student notebooks for parents and visitors to inspect.",
+      specs: "Open shelves showing working builds, broken prototypes, and student notebooks.",
     },
   ];
 
@@ -95,19 +110,19 @@ export default function StemLabPage() {
   const faqs = [
     {
       question: "What is the setup cost of a school innovation lab or STEM lab in India?",
-      answer: "Traditional kit-based STEM and robotics labs in India cost ₹7 Lakhs to ₹25 Lakhs plus 10% to 15% every year in replacement kits. A Curioso lab cuts setup and yearly supply costs by over 80% (typically ₹1.5 Lakhs to ₹4 Lakhs for tools and materials bought locally) because we do not mark up hardware and only charge for the curriculum and teacher training.",
+      answer: "Traditional kit-based robotics and STEM labs cost ₹7 Lakhs to ₹25 Lakhs plus 10% to 15% yearly in replacement kits. A Curioso lab typically runs ₹1.5 Lakhs to ₹4 Lakhs in locally bought tools and supplies (80%+ lower cost) because we never mark up hardware.",
     },
     {
       question: "How does a Curioso STEM and innovation lab compare to a robotics lab or Atal Tinkering Lab (ATL)?",
-      answer: "Standard robotics labs and many tinkering labs rely on pre-molded plastic kits that snap together only one way, turning students into manual followers. Curioso uses everyday materials like copper wire, syringes, scrap wood, small DC motors, and cardboard so students see where things fail, fix them, and truly grasp physics and math.",
+      answer: "Kit robotics labs snap together only one way, turning students into manual followers. Curioso uses copper wire, syringes, scrap wood, small DC motors, and cardboard so students spot failures, fix them, and grasp the real physics.",
     },
     {
       question: "What room size and equipment are required for a school STEM lab?",
-      answer: "A school STEM lab works well in a 600 to 1,500 sq. ft. room set up for 20 to 30 students (3 to 4 students per table) across four areas: Cutting & Building, Motors & Circuits, Testing & Measurement, and Display Shelves. Curioso gives your team the complete local shopping list so you buy directly at wholesale prices.",
+      answer: "A 600 to 1,500 sq. ft. room fits 20 to 30 students across four zones: Cutting & Building, Motors & Circuits, Testing & Measurement, and Display Shelves. Curioso gives your team the complete local shopping list to buy directly at wholesale prices.",
     },
     {
       question: "Who runs the innovation lab sessions once the room is set up?",
-      answer: "Instead of relying on rotating outside trainers, Curioso helps train your own science and math teachers to run the lab. We provide step-by-step teacher guides, checklists for common student mistakes, weekly prep check-ins, and monthly on-campus workshops so the skill stays inside your school.",
+      answer: "Your own science and math teachers run the lab instead of rotating outside trainers. Curioso provides step-by-step teacher guides, mistake checklists, weekly prep check-ins, and monthly campus workshops.",
     },
   ];
 
@@ -130,16 +145,32 @@ export default function StemLabPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
-      <div className="bg-ivory min-h-screen">
+      <div className="bg-ivory min-h-screen w-full min-w-0 overflow-x-hidden">
         <ProgramHeader
           badge="STEM & Innovation Lab"
           titlePrefix="School STEM Lab &"
           titleHighlight="Innovation Lab Setup."
-          subtitle="Set up a high-impact school STEM lab, innovation lab, and makerspace in India at 80% lower cost than traditional robotics labs and Atal Tinkering Labs (ATL), with zero vendor lock-in and permanent teacher training."
+          subtitle="Set up a school STEM lab and innovation lab in India at 80% lower cost than robotics labs and Atal Tinkering Labs (ATL), using local supplies and your own trained teachers."
           activeSlug="stem-lab"
           heroImage="/images/school/cardboard-ev-desk-closeup.jpg"
           imageAlt="Students building a scratch-built electric car with cardboard and small motors"
         />
+
+        {/* 3-Metric Summary Strip */}
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 -mt-6 mb-10 md:mb-14 relative z-20">
+          <div className="grid grid-cols-1 sm:grid-cols-3 bg-white rounded-2xl border border-slate-200 shadow-lg divide-y sm:divide-y-0 sm:divide-x divide-slate-200">
+            {summaryMetrics.map((metric) => (
+              <div key={metric.value} className="p-5 sm:p-6">
+                <p className="text-base sm:text-lg md:text-xl font-extrabold text-space">
+                  {metric.value}
+                </p>
+                <p className="text-xs sm:text-sm text-slate-600 font-medium mt-1">
+                  {metric.detail}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-16 md:pb-24 space-y-12 md:space-y-16">
           {/* 1. Cost Comparison Table */}
@@ -148,7 +179,7 @@ export default function StemLabPage() {
               STEM Lab &amp; Innovation Lab Setup Cost Breakdown in India
             </h2>
             <p className="text-sm sm:text-base text-slate-600 font-medium leading-relaxed max-w-3xl mb-8">
-              Most school directors see two expensive extremes when budgeting a STEM lab, robotics lab, or tinkering lab: ₹10 Lakh to ₹25 Lakh vendor packages or underused glass rooms. Here is how buying local everyday supplies changes the budget.
+              School directors usually see ₹10 Lakh to ₹25 Lakh vendor packages when budgeting a STEM lab, robotics lab, or tinkering lab. Buying everyday local supplies cuts that budget by over 80%.
             </p>
 
             <div className="overflow-x-auto">
@@ -184,6 +215,16 @@ export default function StemLabPage() {
                 </tbody>
               </table>
             </div>
+
+            <div className="mt-6 pt-5 border-t border-slate-200 flex flex-wrap items-center gap-2 text-sm sm:text-base font-medium text-slate-600">
+              <span>Want the full budget math?</span>
+              <Link
+                href="/blog/the-capex-trap"
+                className="font-bold text-electric hover:text-space transition-colors"
+              >
+                Read why ₹15 Lakh STEM labs sit locked in glass cupboards &rarr;
+              </Link>
+            </div>
           </section>
 
           {/* 2. Why Traditional Robotics Labs & Tinkering Labs Fail */}
@@ -197,7 +238,7 @@ export default function StemLabPage() {
                   1. Sealed Kits Teach Assembly, Not Engineering
                 </h3>
                 <p className="text-sm sm:text-base text-slate-600 font-medium leading-relaxed">
-                  Snap-together robotics kits fit only one predetermined way. The factory already solved every measurement problem before the box reached your school. Students follow 20-step manuals instead of thinking from scratch.
+                  Snap-together robotics kits fit one set way because the factory solved every measurement already. Students follow step manuals instead of thinking from scratch.
                 </p>
               </div>
               <div className="bg-white p-6 sm:p-8 rounded-2xl border border-slate-200 shadow-sm">
@@ -205,7 +246,7 @@ export default function StemLabPage() {
                   2. Expensive Parts Create Fear of Breaking Things
                 </h3>
                 <p className="text-sm sm:text-base text-slate-600 font-medium leading-relaxed">
-                  Science teachers hesitate to let 11-year-olds experiment freely with a ₹30,000 circuit board that might burn out. When students build with ₹50 motors, copper wire, syringes, and scrap wood, breaking a part costs pennies and teaches real problem solving.
+                  Teachers avoid letting 11-year-olds experiment on a ₹30,000 board that can burn out. With ₹50 motors, wire, syringes, and wood, breaking a part costs pennies and teaches troubleshooting.
                 </p>
               </div>
               <div className="bg-white p-6 sm:p-8 rounded-2xl border border-slate-200 shadow-sm">
@@ -213,7 +254,7 @@ export default function StemLabPage() {
                   3. Outside Trainers Leave Zero Skill Behind
                 </h3>
                 <p className="text-sm sm:text-base text-slate-600 font-medium leading-relaxed">
-                  Handing lab classes to visiting vendor staff leaves your regular faculty disconnected from the lab. Curioso trains your existing science and math teachers so the capability stays inside your school year after year.
+                  Outsourcing lab hours to visiting staff leaves your regular teachers disconnected from the room. We train your own faculty so the skill stays on campus.
                 </p>
               </div>
             </div>
@@ -277,7 +318,7 @@ export default function StemLabPage() {
                 </div>
                 <div className="p-4">
                   <p className="text-sm sm:text-base font-bold text-space">Tabletop Drive Testing</p>
-                  <p className="text-xs sm:text-sm text-slate-600 mt-1">Students test wheel alignment and balance directly on classroom desks.</p>
+                  <p className="text-xs sm:text-sm text-slate-600 mt-1">Testing wheel alignment and balance directly on classroom desks.</p>
                 </div>
               </div>
 
@@ -291,7 +332,7 @@ export default function StemLabPage() {
                 </div>
                 <div className="p-4">
                   <p className="text-sm sm:text-base font-bold text-space">Low-Cost Local Supplies</p>
-                  <p className="text-xs sm:text-sm text-slate-600 mt-1">Wooden sticks, rubber bands, cardboard, and motors bought locally at wholesale rates.</p>
+                  <p className="text-xs sm:text-sm text-slate-600 mt-1">Sticks, rubber bands, cardboard, and motors bought locally at wholesale cost.</p>
                 </div>
               </div>
 
@@ -317,7 +358,7 @@ export default function StemLabPage() {
               Grade-Wise STEM &amp; Innovation Lab Curriculum (NEP 2020 &amp; NCF 2023)
             </h2>
             <p className="text-sm sm:text-base text-slate-600 font-medium leading-relaxed max-w-3xl mb-8">
-              Every project inside the innovation lab maps directly to regular CBSE, ICSE, IB, and IGCSE science and math chapters.
+              Every lab project maps straight to CBSE, ICSE, IB, and IGCSE science and math chapters.
             </p>
 
             <div className="overflow-x-auto">
@@ -363,9 +404,9 @@ export default function StemLabPage() {
                   Buy Supplies Locally (Zero Hardware Markups)
                 </h3>
                 <ul className="space-y-3 text-sm sm:text-base text-slate-600 font-medium leading-relaxed">
-                  <li>1. Curioso provides the 45-project lesson system, student challenges, and safety guides.</li>
-                  <li>2. We give your school a simple shopping list (copper wire, syringes, small DC motors, thin metal, scrap wood, basic meters, hand tools, and storage trays).</li>
-                  <li>3. Your school buys everything straight from local hardware markets at real cost with zero vendor lock-in.</li>
+                  <li>1. Curioso supplies the 45-project lesson system, student tasks, and safety guides.</li>
+                  <li>2. You get one clear local shopping list (wire, syringes, DC motors, scrap wood, meters, hand tools).</li>
+                  <li>3. Your team buys straight from local wholesale markets with zero vendor lock-in.</li>
                 </ul>
               </div>
               <div className="bg-white p-6 sm:p-10 rounded-2xl sm:rounded-3xl border border-slate-200 shadow-sm">
@@ -373,9 +414,9 @@ export default function StemLabPage() {
                   We Train Your Existing Teachers
                 </h3>
                 <ul className="space-y-3 text-sm sm:text-base text-slate-600 font-medium leading-relaxed">
-                  <li>1. Help hiring lab staff or training your current science and math teachers.</li>
-                  <li>2. Weekly prep check-ins and troubleshooting guides so teachers know how to guide stuck students without giving away the answer.</li>
-                  <li>3. Monthly on-campus teacher workshops led by curriculum designers with experience across 500+ schools and 200,000+ students (founded by IIT Kharagpur Aerospace Engineer Jeetesh Gulani).</li>
+                  <li>1. Support hiring lab staff or upskilling your current science and math faculty.</li>
+                  <li>2. Weekly prep check-ins and guides to coach stuck students without giving answers away.</li>
+                  <li>3. Monthly campus workshops led by Jeetesh Gulani (IIT Kharagpur; 500+ schools, 200,000+ students).</li>
                 </ul>
               </div>
             </div>

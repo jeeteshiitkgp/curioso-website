@@ -17,12 +17,12 @@ export const metadata = {
 
 export default function ProgramsPage() {
   return (
-    <div className="bg-ivory min-h-screen">
+    <div className="bg-ivory min-h-screen w-full min-w-0 overflow-x-hidden">
       <ProgramHeader
         badge="School Programs"
         titlePrefix="School"
         titleHighlight="Programs."
-        subtitle="Three ways we work with CBSE, ICSE, IB, and IGCSE schools in India. Pick a program below to see how it runs, what materials are used, and what it costs."
+        subtitle="Three ways we work with CBSE, ICSE, IB, and IGCSE schools in India. Open any program below to see how it runs, what supplies are used, and what it costs."
         heroImage="/images/school/cardboard-hands-circle.jpg"
         imageAlt="Overhead view of students' hands measuring and assembling cardboard structures from scratch"
       />

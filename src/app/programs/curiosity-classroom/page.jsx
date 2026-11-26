@@ -44,28 +44,28 @@ export default function CuriosityClassroomPage() {
   const comparisonRows = [
     {
       dimension: "Setup Cost",
-      standard: "₹1.5 Lakhs to ₹4.5 Lakhs for pre-packaged acrylic/wood bundles",
-      curioso: "Everyday classroom supplies (80%+ lower total cost)",
+      standard: "₹1.5 Lakhs to ₹4.5 Lakhs for acrylic and wood kit bundles",
+      curioso: "Everyday desk supplies (80%+ lower total cost)",
     },
     {
       dimension: "Space Needed",
-      standard: "Separate 500 sq. ft. room + steel cupboards for 40 students",
-      curioso: "Runs right on regular student desks (or refreshes an unused lab room)",
+      standard: "Separate 500 sq. ft. room with steel cupboards",
+      curioso: "Runs right on student desks or revives an unused room",
     },
     {
       dimension: "Weekly Usage",
-      standard: "1 visit a month; teachers rarely have time to move whole classes",
+      standard: "1 visit a month; moving whole sections wastes time",
       curioso: "Built into daily 45-minute science and math periods",
     },
     {
       dimension: "How Concepts Are Taught",
-      standard: "Demonstrating already-memorized formulas with plastic blocks",
-      curioso: "A surprising physical puzzle breaks wrong guesses first; the rule comes second",
+      standard: "Showing already-memorized formulas with plastic blocks",
+      curioso: "A physical puzzle breaks wrong guesses before teaching the rule",
     },
     {
       dimension: "Board & Assessment",
       standard: "Students copy set steps into a lab manual",
-      curioso: "Direct CBSE/ICSE/IB chapter mapping + Class 9 to 10 internal portfolios",
+      curioso: "CBSE/ICSE/IB chapter mapping + Class 9 to 10 portfolios",
     },
   ];
 
@@ -73,25 +73,24 @@ export default function CuriosityClassroomPage() {
     {
       tag: "Grades 4 to 8 · Triangles & Bridges",
       title: "The Paper-Fold Bridge",
-      items: "1 A4 sheet, 2 mugs, 20+ coins, ice-cream sticks, pushpins.",
-      trap: "Flat paper bends under 1 coin, and a 4-stick pinned square collapses sideways.",
-      math: "Zig-zag paper folds and 3-stick triangles lock shapes rigidly, showing why 8th-grade triangle congruence holds real bridges up.",
-      image: "/images/lessons/corrugated-paper-bridge-diagram.jpg",
+      items: "1 A4 sheet, 2 mugs, 20+ coins, sticks, pushpins.",
+      trap: "Flat paper bends under 1 coin, and a pinned square frame collapses sideways.",
+      math: "Zig-zag pleats and 3-stick triangles lock rigidly, proving 8th-grade triangle congruence.",
       lessonHref: "/lessons/corrugated-paper-bridge-geometry",
     },
     {
       tag: "Grades 5 to 8 · Area vs Perimeter",
       title: "Walk Through a Postcard",
-      items: "1 postcard or index card, 1 pair of scissors.",
-      trap: "Every student insists a tiny card cannot fit a person without tearing apart.",
-      math: "Alternating cuts open one unbroken ring large enough to step through. Surface area stays constant while the outer edge stretches roughly 20x.",
+      items: "1 postcard, 1 pair of scissors.",
+      trap: "Every student insists a tiny card cannot fit a person without tearing.",
+      math: "Alternating cuts open one unbroken ring to step through: same area, 20x outer edge.",
     },
     {
       tag: "Grades 7 to 10 · Area vs Volume",
       title: "The Two-Cylinder Rice Trap",
       items: "2 identical A4 sheets, tape, dry rice or sand.",
-      trap: "Rolling one sheet tall and one wide uses the exact same paper size, so students bet both hold the same amount.",
-      math: "Pouring rice proves the wide cylinder holds ~41% more because radius gets squared (V = πr²h).",
+      trap: "Tall and wide cylinders use the exact same sheet, so students bet both hold equal rice.",
+      math: "Pouring proves the wide cylinder holds ~41% more because radius squares (V = πr²h).",
     },
   ];
 
@@ -99,17 +98,17 @@ export default function CuriosityClassroomPage() {
     {
       step: "01 · 10 Min",
       title: "Break Wrong Intuition",
-      desc: "Start with a physical question students predict before touching any definition on the board.",
+      desc: "Students predict a physical puzzle before seeing any formula.",
     },
     {
       step: "02 · 20 Min",
       title: "Test & Fix on Desks",
-      desc: "Students fold, cut, pour, and measure in pairs until they see why their first guess failed.",
+      desc: "Pairs fold, cut, and pour until they see why their guess failed.",
     },
     {
       step: "03 · 15 Min",
       title: "Lock the Textbook Rule",
-      desc: "Only after they see the physical behavior does the teacher connect it straight to the textbook formula.",
+      desc: "Connect what just happened directly to the textbook chapter.",
     },
   ];
 
@@ -164,19 +163,19 @@ export default function CuriosityClassroomPage() {
   const faqs = [
     {
       question: "What is the setup cost of a maths lab or activity-based classroom in CBSE schools?",
-      answer: "Outside lab packages in India typically charge ₹1.5 Lakhs to ₹4.5 Lakhs for acrylic 3D shapes, wooden geoboards, and steel cupboards. Curiosity Classroom removes kit markups completely by giving schools the lesson system and teacher guides while students use everyday desk items, cutting total cost by over 80%.",
+      answer: "Outside lab packages charge ₹1.5 Lakhs to ₹4.5 Lakhs for plastic shapes and cupboards. Curiosity Classroom supplies the lesson guides while students use everyday desk items, cutting total cost by over 80%.",
     },
     {
       question: "Do we need a separate 500 sq. ft. room to run Curiosity Classroom and a math lab?",
-      answer: "CBSE guidelines suggest a 500 sq. ft. room if you store bulky display apparatus, which is why most classes visit that room only once a month. Curiosity Classroom runs science and math activities (including the physical math lab) right inside regular 45-minute classrooms on student desks, or brings an unused room back to daily life.",
+      answer: "No. Separate display rooms rarely get used more than once a month, so our science and math activities run directly on regular student desks during 45-minute periods (or revive an existing unused room).",
     },
     {
       question: "What equipment list do schools actually need?",
-      answer: "Skip sealed plastic fraction discs and display models that stay behind glass. Most middle and high school science and math activities need only local everyday items: A4 paper, postcards, scissors, tape, dry rice, coins, ice-cream sticks, pushpins, leaves, flashlights, and rulers.",
+      answer: "Skip glass-cupboard models and sealed fraction discs. Most lessons use A4 paper, postcards, scissors, tape, dry rice, coins, ice-cream sticks, pushpins, leaves, flashlights, and rulers.",
     },
     {
       question: "How does this fit inside our CBSE, ICSE, IB, or IGCSE timetable?",
-      answer: "It does not require extra periods or a Saturday club. Each 45-minute lesson maps directly to your existing science and math chapters and CBSE Class 9 to 10 internal portfolios, backed by plain teacher guides and weekly prep check-ins.",
+      answer: "It fits inside your current science and math periods with zero extra club hours. Every 45-minute lesson maps to existing chapters and Class 9 to 10 portfolios, backed by weekly teacher prep check-ins.",
     },
   ];
 
@@ -204,7 +203,7 @@ export default function CuriosityClassroomPage() {
           badge="Curiosity Classroom"
           titlePrefix="Hands-On Science &"
           titleHighlight="Classroom Math Lab."
-          subtitle="Turn regular 45-minute science and math periods into active inquiry using everyday desk items, including a full physical math lab without the ₹3-lakh cupboard of plastic shapes."
+          subtitle="Run hands-on science and a physical math lab inside regular 45-minute periods using everyday desk items, without a ₹3-lakh cupboard of plastic shapes."
           activeSlug="curiosity-classroom"
           heroImage="/images/lessons/corrugated-paper-bridge.jpg"
           imageAlt="Folded paper bridge holding coins across two books"
@@ -233,7 +232,7 @@ export default function CuriosityClassroomPage() {
               Why Standard CBSE Maths Labs Sit Locked in Cupboards
             </h2>
             <p className="text-sm sm:text-base text-slate-600 font-medium leading-relaxed max-w-3xl mb-6">
-              Schools spend ₹1.5 to ₹4.5 lakhs on acrylic cones, plastic fraction discs, and steel cupboards that teachers rarely touch. Curiosity Classroom weaves physical math and science activities directly into daily lessons.
+              Schools spend ₹1.5 to ₹4.5 lakhs on plastic fraction sets and cupboards that classes rarely visit. Curiosity Classroom puts physical math and science right on student desks every day.
             </p>
 
             <div className="overflow-x-auto">
@@ -276,17 +275,12 @@ export default function CuriosityClassroomPage() {
               Three Everyday Math Lab Activities (Zero Kits)
             </h2>
             <p className="text-sm sm:text-base text-slate-600 font-medium leading-relaxed max-w-3xl mb-8">
-              As part of Curiosity Classroom, math topics start with a physical puzzle students get wrong on their first guess.
+              Each math lesson opens with a physical puzzle students get wrong on their first guess.
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {mathExperiments.map((exp) => (
                 <div key={exp.title} className="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden flex flex-col">
-                  {exp.image && (
-                    <div className="h-44 w-full bg-slate-950 overflow-hidden">
-                      <img src={exp.image} alt={exp.title} className="w-full h-full object-cover" />
-                    </div>
-                  )}
                   <div className="p-6 flex flex-col flex-grow">
                     <span className="inline-block self-start px-3 py-1 rounded-full bg-indigo-50 text-indigo-800 text-xs font-bold uppercase tracking-wider mb-3">
                       {exp.tag}

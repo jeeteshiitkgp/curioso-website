@@ -44,24 +44,26 @@ export default function ProgramHeader({
             </p>
 
             {/* Sibling program switcher */}
-            <div className="flex flex-wrap gap-2.5">
-              {programsList.map((prog) => {
-                const isActive = prog.slug === activeSlug;
-                return (
-                  <Link
-                    key={prog.slug}
-                    href={prog.href}
-                    className={`px-3.5 py-2 rounded-full text-xs sm:text-sm font-bold transition-all ${
-                      isActive
-                        ? "bg-electric text-white shadow-lg"
-                        : "bg-indigo-950/70 text-slate-300 border border-indigo-500/30 hover:border-cyan hover:text-white"
-                    }`}
-                  >
-                    {prog.title}
-                  </Link>
-                );
-              })}
-            </div>
+            {activeSlug && (
+              <div className="flex flex-wrap gap-2.5">
+                {programsList.map((prog) => {
+                  const isActive = prog.slug === activeSlug;
+                  return (
+                    <Link
+                      key={prog.slug}
+                      href={prog.href}
+                      className={`px-3.5 py-2 rounded-full text-xs sm:text-sm font-bold transition-all ${
+                        isActive
+                          ? "bg-electric text-white shadow-lg"
+                          : "bg-indigo-950/70 text-slate-300 border border-indigo-500/30 hover:border-cyan hover:text-white"
+                      }`}
+                    >
+                      {prog.title}
+                    </Link>
+                  );
+                })}
+              </div>
+            )}
           </div>
 
           {heroImage && (

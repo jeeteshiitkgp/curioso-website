@@ -1,4 +1,4 @@
-import Link from 'next/link';
+import BlogGrid from '@/components/BlogGrid';
 import { articles as localArticles } from '@/data/articles';
 
 export const metadata = {
@@ -15,6 +15,22 @@ export const metadata = {
 };
 
 export default function Blog() {
+  const now = new Date();
+  const publishedArticles = localArticles
+    .filter((article) => !article.date || new Date(article.date) <= now)
+    .map((article) => ({
+      id: article.id,
+      title: article.title,
+      category: article.category || 'Essays',
+      image: article.image || null,
+      dateLabel: article.date
+        ? new Date(article.date).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })
+        : '',
+      excerpt: article.content
+        ? article.content.replace(/\[(?:INTERACTIVE|YOUTUBE_EMBED):[^\]]+\]/g, '').replace(/[#*!\[\]\(\)]/g, '').substring(0, 160) + '...'
+        : '',
+    }));
+
   return (
     <div className="bg-ivory min-h-screen pb-12 md:pb-16">
       {/* Compact Header Hero */}
@@ -30,54 +46,7 @@ export default function Blog() {
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* 2-Column Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-10">
-          {localArticles
-            .filter((article) => !article.date || new Date(article.date) <= new Date())
-            .map((article) => {
-              return (
-                <Link
-                  key={article.id}
-                  href={`/blog/${article.id}`}
-                  className="group flex flex-col bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-200 flex-grow"
-                >
-                  {article.image && (
-                    <div className="relative h-60 sm:h-64 w-full overflow-hidden bg-space flex items-center justify-center">
-                      <img
-                        src={article.image}
-                        alt={article.title}
-                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                      />
-                      <div className="absolute inset-0 bg-gradient-to-t from-space/70 via-transparent to-transparent opacity-60"></div>
-                    </div>
-                  )}
-
-                  <div className="p-6 sm:p-8 flex flex-col flex-grow">
-                    <div className="flex items-center justify-between gap-4 mb-4">
-                      <span className="text-xs font-bold uppercase tracking-wider text-electric bg-orange-50 px-3 py-1 rounded-full">
-                        {article.category || 'Article'}
-                      </span>
-                      <span className="text-xs font-semibold text-slate-400">
-                        {new Date(article.date).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })}
-                      </span>
-                    </div>
-
-                    <h2 className="text-xl sm:text-2xl font-bold text-space mb-3 group-hover:text-electric transition-colors leading-tight">
-                      {article.title}
-                    </h2>
-
-                    <p className="text-slate-600 text-sm sm:text-base leading-relaxed line-clamp-3 mb-6 flex-grow">
-                      {article.content ? article.content.replace(/\[(?:INTERACTIVE|YOUTUBE_EMBED):[^\]]+\]/g, '').replace(/[#*!\[\]\(\)]/g, '').substring(0, 160) + '...' : ''}
-                    </p>
-
-                    <div className="flex items-center text-sm font-bold text-electric group-hover:translate-x-1 transition-transform">
-                      Read Analysis &rarr;
-                    </div>
-                  </div>
-                </Link>
-              );
-            })}
-        </div>
+        <BlogGrid articles={publishedArticles} />
       </div>
     </div>
   );
